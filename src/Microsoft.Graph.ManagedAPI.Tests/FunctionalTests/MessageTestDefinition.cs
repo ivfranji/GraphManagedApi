@@ -5,6 +5,7 @@
     using System.Linq;
     using System.Threading;
     using System.Threading.Tasks;
+    using Logging;
     using Microsoft.Graph.Exchange;
     using Microsoft.VisualStudio.TestTools.UnitTesting;
     using Microsoft.Graph.Search;
@@ -188,7 +189,8 @@
         public static async Task FindMessage(ExchangeService exchangeService)
         {
             string folderName = "TestFindItemFolder";
-
+            exchangeService.LogFlag = LogFlag.All;
+            exchangeService.LoggingEnabled = true;
             await FunctionalTestHelpers.DeleteFolderIfExist(
                 folderName,
                 exchangeService,

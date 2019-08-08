@@ -1,5 +1,6 @@
 ﻿namespace Microsoft.Graph.CoreHttp
 {
+    using System.Net;
     using System.Net.Http;
     using System.Threading;
     using System.Threading.Tasks;
@@ -18,6 +19,11 @@
         /// Total delay applied.
         /// </summary>
         private const string TotalDelayApplied = "X-TotalDelayApplied";
+
+        /// <summary>
+        /// Http retry exceeded.
+        /// </summary>
+        private const string HttpRetryExceeded = "X-HttpRetryExceeded";
 
         /// <summary>
         /// Create new instance of <see cref="RetryHttpHandler"/>
@@ -75,31 +81,30 @@
             {
                 await this.PreProcessHttpRequest(request);
                 HttpResponseMessage responseMessage = await base.SendAsync(request, cancellationToken);
+
+                this.SetHttpHeader(
+                    responseMessage,
+                    this.TotalDelayAppliedHttpHeaderName,
+                    totalDelayApplied.ToString());
+
+                this.SetHttpHeader(
+                    responseMessage,
+                    this.RetryAttemptHttpHeaderName,
+                    retryCount.ToString());
+
                 if (!this.ShouldRetry(responseMessage))
                 {
-                    this.SetHttpHeader(
-                        responseMessage,
-                        this.TotalDelayAppliedHttpHeaderName,
-                        totalDelayApplied.ToString());
-
-                    this.SetHttpHeader(
-                        responseMessage,
-                        this.RetryAttemptHttpHeaderName,
-                        retryCount.ToString());
-
                     return responseMessage;
                 }
                 else
                 {
                     if (retryCount >= this.HttpRetryOptions.RetryCount)
                     {
-                        throw new HttpRetryCountException(
-                            this.HandlerName,
-                            retryCount,
-                            totalDelayApplied,
-                            request.RequestUri,
-                            request.Method.Method,
-                            responseMessage.StatusCode);
+                        responseMessage.Headers.Add(
+                            HttpRetryHandler.HttpRetryExceeded, 
+                            "true");
+
+                        return responseMessage;
                     }
 
                     retryCount++;

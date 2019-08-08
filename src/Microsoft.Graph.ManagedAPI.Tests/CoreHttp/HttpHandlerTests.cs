@@ -88,7 +88,7 @@
         /// </summary>
         /// <returns></returns>
         [TestMethod]
-        public async Task Test_AuthZHttpHandler_ThrowsOnRetryCountExceeded()
+        public async Task Test_AuthZHttpHandler_RetryCountExceeded()
         {
             IHttpExtensionHandler extensionHandler = Substitute.For<IHttpExtensionHandler>();
             extensionHandler.SendAsync(
@@ -104,23 +104,27 @@
 
             using (HttpRequest get = HttpRequest.Get(new Uri("http://localhost"), context))
             {
-                try
+                HttpResponse response = await get.GetHttpResponseAsync();
+                IEnumerable<string> headerValues;
+                Assert.IsTrue(
+                    response.ResponseHeaders.TryGetValues("X-RetryAttempt-HttpAuthZHandler", out headerValues));
+
+                foreach (string s in headerValues)
                 {
-                    HttpResponse response = await get.GetHttpResponseAsync();
+                    Assert.AreEqual(
+                        "3",
+                        s);
                 }
-                catch (HttpRetryCountException e)
+
+
+                Assert.IsTrue(
+                    response.ResponseHeaders.TryGetValues("X-TotalDelayApplied-HttpAuthZHandler", out headerValues));
+
+                foreach (string s in headerValues)
                 {
                     Assert.AreEqual(
-                        3,
-                        e.RetryCount);
-
-                    Assert.AreEqual(
-                        0,
-                        e.TotalDelayApplied);
-
-                    Assert.AreEqual(
-                        HttpStatusCode.Unauthorized,
-                        e.StatusCode);
+                        "0",
+                        s);
                 }
             }
         }
@@ -187,7 +191,7 @@
         /// </summary>
         /// <returns></returns>
         [TestMethod]
-        public async Task Test_ThrottlingHttpHandler_ThrowsOnRetryCountExceeded()
+        public async Task Test_ThrottlingHttpHandler_RetryCountExceeded()
         {
             IHttpExtensionHandler extensionHandler = Substitute.For<IHttpExtensionHandler>();
             extensionHandler.SendAsync(
@@ -203,23 +207,28 @@
 
             using (HttpRequest get = HttpRequest.Get(new Uri("http://localhost"), context))
             {
-                try
+                HttpResponse response = await get.GetHttpResponseAsync();
+
+                IEnumerable<string> headerValues;
+                Assert.IsTrue(
+                    response.ResponseHeaders.TryGetValues("X-RetryAttempt-HttpThrottlingHandler", out headerValues));
+
+                foreach (string s in headerValues)
                 {
-                    HttpResponse response = await get.GetHttpResponseAsync();
+                    Assert.AreEqual(
+                        "3",
+                        s);
                 }
-                catch (HttpRetryCountException e)
+                
+
+                Assert.IsTrue(
+                    response.ResponseHeaders.TryGetValues("X-TotalDelayApplied-HttpThrottlingHandler", out headerValues));
+
+                foreach (string s in headerValues)
                 {
                     Assert.AreEqual(
-                        3,
-                        e.RetryCount);
-
-                    Assert.AreEqual(
-                        15,
-                        e.TotalDelayApplied);
-
-                    Assert.AreEqual(
-                        HttpStatusCode.ServiceUnavailable,
-                        e.StatusCode);
+                        "15",
+                        s);
                 }
             }
         }

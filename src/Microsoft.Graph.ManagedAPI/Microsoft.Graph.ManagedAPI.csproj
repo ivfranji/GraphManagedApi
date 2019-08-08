@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netstandard2.0</TargetFramework>
     <RootNamespace>Microsoft.Graph</RootNamespace>
-    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <Authors>Ivan Franjic</Authors>
     <Description>Microsoft Graph Managed API. It contains generated rich Microsoft.Graph model and it is designed for Exchange developers to transition from Ews managed api to Graph API.</Description>
@@ -13,7 +13,7 @@
     <PackageProjectUrl>https://github.com/ivfranji/GraphManagedApi</PackageProjectUrl>
     <RepositoryUrl>https://github.com/ivfranji/GraphManagedApi</RepositoryUrl>
     <AssemblyVersion>1.0.1.0</AssemblyVersion>
-    <FileVersion>1.0.0.0</FileVersion>
+    <FileVersion>1.0.1.0</FileVersion>
     <Version>1.0.1</Version>
   </PropertyGroup>
 
