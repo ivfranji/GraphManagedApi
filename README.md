@@ -9,3 +9,4 @@ It supports property change tracking locally, handling throttling etc... Please 
 Please report any issues or feature request directly on github and I'll try to address it in timely manner.
 
 Nuget package: https://www.nuget.org/packages/O365.Graph.ManagedAPI
+Wiki: https://github.com/ivfranji/GraphManagedApi/wiki
