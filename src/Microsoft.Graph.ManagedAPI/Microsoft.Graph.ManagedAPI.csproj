@@ -1,0 +1,23 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    <RootNamespace>Microsoft.Graph</RootNamespace>
+    <GeneratePackageOnBuild>false</GeneratePackageOnBuild>
+    <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
+    <Authors>Ivan Franjic</Authors>
+    <Description>Microsoft Graph Managed API. It contains generated rich Microsoft.Graph model and it is designed for Exchange developers to transition from Ews managed api to Graph API.</Description>
+    <PackageTags>MicrosoftGraph Microsoft.Graph Office365 ExchangeOnline Office365Rest Microsoft-Graph-ManagedAPI Exchange-Graph</PackageTags>
+    <Copyright>Copyright 2019</Copyright>
+    <PackageId>O365.Graph.ManagedAPI</PackageId>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="QueryAndView\ExtendedPropertyQuery.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Newtonsoft.Json" Version="12.0.2" />
+  </ItemGroup>
+
+</Project>
