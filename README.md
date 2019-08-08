@@ -1,4 +1,4 @@
-# Microsoft Graph Managed Api
+# Graph Managed Api
 
 Microsoft Graph Managed API - Rich library for interacting with Microsoft Graph. In this iteration majority of Exchange related tasks are covered which helps with transition from EWS Managed API (Microsoft.Exchange.WebServices) to Microsoft Graph.
 
