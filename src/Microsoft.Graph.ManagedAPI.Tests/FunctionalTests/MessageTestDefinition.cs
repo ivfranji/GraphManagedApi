@@ -189,8 +189,6 @@
         public static async Task FindMessage(ExchangeService exchangeService)
         {
             string folderName = "TestFindItemFolder";
-            exchangeService.LogFlag = LogFlag.All;
-            exchangeService.LoggingEnabled = true;
             await FunctionalTestHelpers.DeleteFolderIfExist(
                 folderName,
                 exchangeService,

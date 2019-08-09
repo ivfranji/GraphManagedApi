@@ -19,7 +19,7 @@
             string token = await this.GetToken();
             return new AuthenticationHeaderValue(
                 "Bearer",
-                "md");
+                token);
         }
 
         public string Name
