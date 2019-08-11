@@ -27,3 +27,4 @@ steps:
     command: 'pack'
     packagesToPack: '**/Microsoft.Graph.ManagedAPI.csproj'
     versioningScheme: 'off'
+
