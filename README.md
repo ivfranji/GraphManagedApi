@@ -1,5 +1,7 @@
 # Graph Managed Api
 
+[![Build Status](https://dev.azure.com/GitHubIvFranji/GraphManagedAPI/_apis/build/status/Graph%20Managed%20API?branchName=master)](https://dev.azure.com/GitHubIvFranji/GraphManagedAPI/_build/latest?definitionId=3&branchName=master)
+
 Microsoft Graph Managed API - Rich library for interacting with Microsoft Graph. In this iteration majority of Exchange related tasks are covered which helps with transition from EWS Managed API (Microsoft.Exchange.WebServices) to Microsoft Graph.
 
 Entire Microsoft.Graph model is generated in rich fashion in order to provide seamless experience while using it.
