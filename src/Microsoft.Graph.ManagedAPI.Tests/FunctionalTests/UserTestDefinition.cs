@@ -1,7 +1,11 @@
 ﻿namespace Microsoft.Graph.ManagedAPI.Tests.FunctionalTests
 {
+    using System;
+    using System.Collections.Generic;
+    using System.Threading;
     using System.Threading.Tasks;
     using Microsoft.Graph.Exchange;
+    using VisualStudio.TestTools.UnitTesting;
 
     /// <summary>
     /// User test definition.
@@ -36,6 +40,74 @@
                     }
                 }
             } while (mailFolders.MoreAvailable);
+        }
+
+        /// <summary>
+        /// Get user availability.
+        /// </summary>
+        /// <param name="exchangeServiceA">Exchange service of mailbox A.</param>
+        /// <param name="exchangeServiceB">Exchange service of mailbox B.</param>
+        /// <returns></returns>
+        public static async Task GetUserAvailability(ExchangeService exchangeServiceA, ExchangeService exchangeServiceB)
+        {
+            string subject = Guid.NewGuid().ToString();
+            Event mailboxBEvent = new Event(exchangeServiceB);
+            mailboxBEvent.Subject = subject;
+            mailboxBEvent.Start = new DateTimeTimeZone()
+            {
+                DateTime = DateTimeHelper.GetFormattedDateTime(4).ToString("yyyy-MM-ddThh:mm:ss"),
+                TimeZone = "UTC"
+            };
+
+            mailboxBEvent.End = new DateTimeTimeZone()
+            {
+                DateTime = DateTimeHelper.GetFormattedDateTime(5).ToString("yyyy-MM-ddThh:mm:ss"),
+                TimeZone = "UTC"
+            };
+
+            await mailboxBEvent.SaveAsync();
+
+            // sleep a bit to ensure event is
+            // saved.
+            Thread.Sleep(1500);
+            List<string> users = new List<string>();
+            users.Add(AppConfig.MailboxB);
+            DateTimeTimeZone start = new DateTimeTimeZone()
+            {
+                DateTime = DateTimeHelper.GetFormattedDateTime().ToString("yyyy-MM-ddThh:mm:ss"),
+                TimeZone = "UTC"
+            };
+
+            DateTimeTimeZone end = new DateTimeTimeZone()
+            {
+                DateTime = DateTimeHelper.GetFormattedDateTime(72).ToString("yyyy-MM-ddThh:mm:ss"),
+                TimeZone = "UTC"
+            };
+            
+            IList<ScheduleInformation> availability = await exchangeServiceA.GetUserAvailability(
+                users, 
+                start, 
+                end, 
+                60);
+
+            Assert.AreEqual(
+                1,
+                availability.Count);
+
+            bool hasItem = false;
+            foreach (ScheduleItem item in availability[0].ScheduleItems)
+            {
+                if (item.Subject == subject)
+                {
+                    Assert.AreEqual(
+                        FreeBusyStatus.Busy,
+                        item.Status);
+                    hasItem = true;
+                }
+            }
+
+            Assert.IsTrue(hasItem);
+            await mailboxBEvent.DeleteAsync();
         }
     }
 }

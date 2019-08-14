@@ -36,6 +36,16 @@
             await this.RunAsMailboxA(UserTestDefinition.GetUser);
         }
 
+        /// <summary>
+        /// Test GetUserAvailability.
+        /// </summary>
+        /// <returns></returns>
+        [TestMethod]
+        public async Task Test_GetUserAvailability()
+        {
+            await this.RunWithMailboxAMailboxB(UserTestDefinition.GetUserAvailability);
+        }
+
         #endregion
 
         #region Message tests

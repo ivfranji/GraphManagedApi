@@ -2,6 +2,7 @@
 {
     using System;
     using System.Collections.Generic;
+    using Utilities;
 
     /// <summary>
     /// Represent path to the specific entity.
@@ -67,6 +68,19 @@
 
             this.Id = string.Empty;
             this.RootContainer = EntityPath.TypePathMapping.Value[entityType];
+        }
+
+        /// <summary>
+        /// Create new instance of <see cref="EntityPath"/>
+        /// </summary>
+        /// <param name="id">Entity Id.</param>
+        /// <param name="rootContainer">Entity continer.</param>
+        internal EntityPath(string id, string rootContainer)
+        {
+            id.ThrowIfNullOrEmpty(nameof(id));
+            rootContainer.ThrowIfNullOrEmpty(nameof(rootContainer));
+            this.Id = id;
+            this.RootContainer = rootContainer;
         }
 
         /// <summary>

@@ -165,5 +165,26 @@
             Assert.AreEqual("MailFolders/Inbox/MessageRules/abc", entityPath.Path);
             Assert.IsNull(entityPath.SubEntity);
         }
+
+        /// <summary>
+        /// Test non-typed entity path.
+        /// </summary>
+        [TestMethod]
+        public void Test_NonTypedEntityPath()
+        {
+            EntityPath entityPath = new EntityPath(
+                "abc==", 
+                "calCheck");
+
+            Assert.IsFalse(entityPath.IsRootContainer);
+            Assert.AreEqual("calCheck/abc==", entityPath.Path);
+            Assert.AreEqual("abc==", entityPath.Id);
+            Assert.AreEqual("calCheck", entityPath.RootContainer);
+            Assert.IsNull(entityPath.SubEntity);
+
+            entityPath.SubEntity = new EntityPath(typeof(MailFolder));
+            Assert.AreEqual("calCheck/abc==/MailFolders", entityPath.Path);
+            Assert.IsNotNull(entityPath.SubEntity);
+        }
     }
 }

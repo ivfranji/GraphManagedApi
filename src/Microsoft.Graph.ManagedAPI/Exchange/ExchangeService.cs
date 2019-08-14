@@ -447,6 +447,37 @@
         #region User centric methods
 
         /// <summary>
+        /// Get user availability.
+        /// </summary>
+        /// <param name="schedules">Email address of attendees.</param>
+        /// <param name="startTime">Start time.</param>
+        /// <param name="endTime">End time.</param>
+        /// <param name="availabilityViewInterval">Availability interval.</param>
+        /// <returns></returns>
+        public async Task<IList<ScheduleInformation>> GetUserAvailability(IList<string> schedules, DateTimeTimeZone startTime, DateTimeTimeZone endTime, int availabilityViewInterval)
+        {
+            Dictionary<string, object> customRequestPayload = new Dictionary<string, object>();
+            customRequestPayload.Add(nameof(schedules), schedules);
+            customRequestPayload.Add(nameof(endTime), endTime);
+            customRequestPayload.Add(nameof(startTime), startTime);
+            customRequestPayload.Add(nameof(availabilityViewInterval), availabilityViewInterval);
+            string payload = this.JsonConverter.Convert(customRequestPayload);
+
+            GraphUri graphUri = this.CreateGraphUri(
+                new EntityPath("GetSchedule", "Calendar"),
+                null);
+
+            HttpResponse httpResponse = await this.ExecutePostRequest(
+                graphUri,
+                payload);
+
+            IList<ScheduleInformation> response =
+                this.JsonConverter.Convert<IList<ScheduleInformation>>(httpResponse.Content);
+
+            return response;
+        }
+
+        /// <summary>
         /// Get current user.
         /// </summary>
         /// <returns></returns>

@@ -5,6 +5,7 @@
     using Newtonsoft.Json;
     using Newtonsoft.Json.Converters;
     using Newtonsoft.Json.Linq;
+    using Utilities;
 
     /// <summary>
     /// Json converter.
@@ -107,6 +108,25 @@
                         additionalProperty.Key,
                         JToken.FromObject(additionalProperty.Value));
                 }
+            }
+
+            return JsonConvert.SerializeObject(rootObject);
+        }
+
+        /// <summary>
+        /// Serialize dictionary holding custom properties.
+        /// </summary>
+        /// <param name="customProperties">Custom properties dictionary.</param>
+        /// <returns></returns>
+        internal string Convert(Dictionary<string, object> customProperties)
+        {
+            customProperties.ThrowIfNull(nameof(customProperties));
+            JObject rootObject = new JObject();
+            foreach (KeyValuePair<string, object> customProperty in customProperties)
+            {
+                rootObject.Add(
+                    customProperty.Key,
+                    JToken.FromObject(customProperty.Value));
             }
 
             return JsonConvert.SerializeObject(rootObject);

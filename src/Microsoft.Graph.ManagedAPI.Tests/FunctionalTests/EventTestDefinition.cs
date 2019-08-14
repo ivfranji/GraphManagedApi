@@ -32,13 +32,13 @@
             calendarEvent.Subject = subject;
             calendarEvent.Start = new DateTimeTimeZone()
             {
-                DateTime = DateTimeHelper.GetFormattedDateTime().ToString(),
+                DateTime = DateTimeHelper.GetFormattedDateTime().ToString("yyyy-MM-ddThh:mm:ss"),
                 TimeZone = "Central European Standard Time"
             };
 
             calendarEvent.End = new DateTimeTimeZone()
             {
-                DateTime = DateTimeHelper.GetFormattedDateTime(5).ToString(),
+                DateTime = DateTimeHelper.GetFormattedDateTime(5).ToString("yyyy-MM-ddThh:mm:ss"),
                 TimeZone = "Central European Standard Time"
             };
 
