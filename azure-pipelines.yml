@@ -1,3 +1,5 @@
+name: $(majorMinorVersion).$(semanticVersion)
+
 trigger:
 - master
 
@@ -8,6 +10,8 @@ variables:
   solution: '**/*.sln'
   buildPlatform: 'Any CPU'
   buildConfiguration: 'Release'
+  majorMinorVersion: 1.0
+  semanticVersion: $[counter(variables['majorMinorVersion'], 0)]
 
 steps:
 - task: NuGetToolInstaller@1
@@ -26,5 +30,5 @@ steps:
   inputs:
     command: 'pack'
     packagesToPack: '**/*.csproj'
-    versioningScheme: 'byEnvVar'
-    versionEnvVar: 'Build.BuildNumber'
+    versioningScheme: 'byBuildNumber'
+    packDirectory: '$(build.artifactStagingDirectory)'
