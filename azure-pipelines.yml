@@ -36,6 +36,6 @@ steps:
 - task: NuGetCommand@2
   inputs:
     command: 'push'
-    packagesToPush: '$(build.artifactStagingDirectory)/$(ProjectName)*.nupkg'
+    packagesToPush: '$(build.artifactStagingDirectory)/*.*$(semanticVersion).nupkg'
     nuGetFeedType: 'external'
     publishFeedCredentials: 'Nuget'
