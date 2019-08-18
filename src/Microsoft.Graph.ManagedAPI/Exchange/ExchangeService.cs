@@ -209,8 +209,6 @@
         /// <returns></returns>
         public async Task<ChangeCollection<MailFolderChange>> SyncFolderHierarchy(MailFolderPropertySet propertySet, string syncState)
         {
-            // TEMP TEMP TODO: Remove it
-            this.Preferences.Add("odata.maxpagesize=2");
             GraphUri graphUri = this.CreateGraphUri(
                 new EntityPath("delta", typeof(MailFolder)),
                     null);

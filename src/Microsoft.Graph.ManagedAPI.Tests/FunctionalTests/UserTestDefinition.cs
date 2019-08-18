@@ -111,11 +111,11 @@
         }
 
         /// <summary>
-        /// Get mailbox settings.
+        /// Mailbox settings test.
         /// </summary>
         /// <param name="exchangeService">Exchange service.</param>
         /// <returns></returns>
-        public static async Task GetMailboxSettings(ExchangeService exchangeService)
+        public static async Task GetAndUpdateMailboxSettings(ExchangeService exchangeService)
         {
             // set
             MailboxSettings mailboxSettings = new MailboxSettings()
