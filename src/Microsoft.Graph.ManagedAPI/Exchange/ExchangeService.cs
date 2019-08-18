@@ -528,6 +528,33 @@
             return this.JsonConverter.Convert<MailboxSettings>(response.Content);
         }
 
+        /// <summary>
+        /// Get mail tips.
+        /// </summary>
+        /// <param name="emailAddresses">Email addresses.</param>
+        /// <param name="mailTipsOptions">Mail tips options.</param>
+        /// <returns></returns>
+        public async Task<IList<MailTips>> GetMailTips(IList<string> emailAddresses, MailTipsType mailTipsOptions)
+        {
+            emailAddresses.ThrowIfNull(nameof(emailAddresses));
+            Dictionary<string, object> customRequestPayload = new Dictionary<string, object>()
+            {
+                { nameof(emailAddresses), emailAddresses },
+                { nameof(mailTipsOptions), mailTipsOptions }
+            };
+
+            string requestPayload = this.JsonConverter.Convert(customRequestPayload);
+            GraphUri graphUri = this.CreateGraphUri(
+                new EntityPath(nameof(User.GetMailTips)),
+                null);
+
+            HttpResponse httpResponse = await this.ExecutePostRequest(
+                graphUri,
+                requestPayload);
+
+            return this.JsonConverter.Convert<IList<MailTips>>(httpResponse.Content);
+        }
+
         #endregion
 
         #region IEntityService contract

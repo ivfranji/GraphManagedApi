@@ -180,5 +180,57 @@
                 ExternalAudienceScope.None,
                 mailboxSettings.AutomaticRepliesSetting.ExternalAudience);
         }
+
+        /// <summary>
+        /// Get mail tips.
+        /// </summary>
+        /// <param name="exchangeServiceA">Exchange service A.</param>
+        /// <param name="exchangeServiceB">Exchange service B.</param>
+        /// <returns></returns>
+        public static async Task GetMailTips(ExchangeService exchangeServiceA, ExchangeService exchangeServiceB)
+        {
+            MailboxSettings mailboxSettings = new MailboxSettings()
+            {
+                AutomaticRepliesSetting = new AutomaticRepliesSetting()
+                {
+                    ExternalAudience = ExternalAudienceScope.All,
+                    ExternalReplyMessage = "This is external OOF",
+                    InternalReplyMessage = "This is internal OOF",
+                    Status = AutomaticRepliesStatus.AlwaysEnabled
+                }
+            };
+
+            await exchangeServiceB.UpdateMailboxSettings(mailboxSettings);
+
+            IList<string> emailAddresses = new List<string>()
+            {
+                AppConfig.MailboxB
+            };
+
+            IList<MailTips> mailTips = await exchangeServiceA.GetMailTips(
+                emailAddresses, 
+                MailTipsType.AutomaticReplies);
+
+            Assert.AreEqual(
+                1,
+                mailTips.Count);
+
+            Assert.AreEqual(
+                "<div>This is internal OOF</div>",
+                mailTips[0].AutomaticReplies.Message);
+
+            mailboxSettings = new MailboxSettings()
+            {
+                AutomaticRepliesSetting = new AutomaticRepliesSetting()
+                {
+                    ExternalAudience = ExternalAudienceScope.None,
+                    ExternalReplyMessage = "",
+                    InternalReplyMessage = "",
+                    Status = AutomaticRepliesStatus.Disabled
+                }
+            };
+
+            await exchangeServiceB.UpdateMailboxSettings(mailboxSettings);
+        }
     }
 }

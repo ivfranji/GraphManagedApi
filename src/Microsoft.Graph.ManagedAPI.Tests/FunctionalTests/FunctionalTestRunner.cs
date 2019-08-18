@@ -53,7 +53,17 @@
         [TestMethod]
         public async Task Test_GetMailboxSettings()
         {
-            await this.RunAsMailboxA(UserTestDefinition.GetMailboxSettings);
+            await this.RunAsMailboxA(UserTestDefinition.GetAndUpdateMailboxSettings);
+        }
+
+        /// <summary>
+        /// Get mail tips test.
+        /// </summary>
+        /// <returns></returns>
+        [TestMethod]
+        public async Task Test_GetMailTips()
+        {
+            await this.RunWithMailboxAMailboxB(UserTestDefinition.GetMailTips);
         }
 
         #endregion
