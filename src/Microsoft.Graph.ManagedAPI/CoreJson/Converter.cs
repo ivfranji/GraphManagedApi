@@ -133,6 +133,17 @@
         }
 
         /// <summary>
+        /// Convert raw object to string.
+        /// </summary>
+        /// <param name="obj">Object to convert.</param>
+        /// <returns></returns>
+        internal string Convert(object obj)
+        {
+            obj.ThrowIfNull(nameof(obj));
+            return JsonConvert.SerializeObject(obj);
+        }
+
+        /// <summary>
         /// Build object from change tracker.
         /// </summary>
         /// <param name="changeTracker">Change tracker.</param>

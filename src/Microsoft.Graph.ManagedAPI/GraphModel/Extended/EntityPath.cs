@@ -76,10 +76,19 @@
         /// <param name="id">Entity Id.</param>
         /// <param name="rootContainer">Entity continer.</param>
         internal EntityPath(string id, string rootContainer)
+            : this(rootContainer)
         {
             id.ThrowIfNullOrEmpty(nameof(id));
-            rootContainer.ThrowIfNullOrEmpty(nameof(rootContainer));
             this.Id = id;
+        }
+
+        /// <summary>
+        /// Create new instance of <see cref="EntityPath"/>
+        /// </summary>
+        /// <param name="rootContainer">Root container.</param>
+        internal EntityPath(string rootContainer)
+        {
+            rootContainer.ThrowIfNullOrEmpty(nameof(rootContainer));
             this.RootContainer = rootContainer;
         }
 

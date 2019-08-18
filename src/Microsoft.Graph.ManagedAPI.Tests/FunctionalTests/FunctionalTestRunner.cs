@@ -46,6 +46,16 @@
             await this.RunWithMailboxAMailboxB(UserTestDefinition.GetUserAvailability);
         }
 
+        /// <summary>
+        /// Get mailbox settings.
+        /// </summary>
+        /// <returns></returns>
+        [TestMethod]
+        public async Task Test_GetMailboxSettings()
+        {
+            await this.RunAsMailboxA(UserTestDefinition.GetMailboxSettings);
+        }
+
         #endregion
 
         #region Message tests

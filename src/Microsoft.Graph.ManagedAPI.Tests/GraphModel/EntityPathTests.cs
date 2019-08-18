@@ -185,6 +185,12 @@
             entityPath.SubEntity = new EntityPath(typeof(MailFolder));
             Assert.AreEqual("calCheck/abc==/MailFolders", entityPath.Path);
             Assert.IsNotNull(entityPath.SubEntity);
+
+            entityPath = new EntityPath(nameof(AutomaticRepliesSetting));
+            Assert.IsTrue(entityPath.IsRootContainer);
+            Assert.AreEqual("AutomaticRepliesSetting", entityPath.RootContainer);
+            Assert.AreEqual("AutomaticRepliesSetting", entityPath.Path);
+            Assert.IsNull(entityPath.SubEntity);
         }
     }
 }

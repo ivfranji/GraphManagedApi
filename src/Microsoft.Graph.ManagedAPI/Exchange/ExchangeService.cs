@@ -496,8 +496,42 @@
             return this.exchangeUser;
         }
 
+        /// <summary>
+        /// Pull mailbox settings from user mailbox.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<MailboxSettings> GetMailboxSettings()
+        {
+            GraphUri graphUri = this.CreateGraphUri(
+                new EntityPath(nameof(MailboxSettings)),
+                null);
+
+            HttpResponse response = await this.ExecuteGetRequest(graphUri);
+            return this.JsonConverter.Convert<MailboxSettings>(response.Content);
+        }
+
+        /// <summary>
+        /// Pull mailbox settings from user mailbox.
+        /// </summary>
+        /// <returns></returns>
+        public async Task<MailboxSettings> UpdateMailboxSettings(MailboxSettings mailboxSettings)
+        {
+            mailboxSettings.ThrowIfNull(nameof(mailboxSettings));
+
+            GraphUri graphUri = this.CreateGraphUri(
+                new EntityPath(nameof(MailboxSettings)),
+                null);
+
+            string rawMailboxSettings = this.JsonConverter.Convert(mailboxSettings);
+            HttpResponse response = await this.ExecutePatchRequest(
+                graphUri,
+                rawMailboxSettings);
+
+            return this.JsonConverter.Convert<MailboxSettings>(response.Content);
+        }
+
         #endregion
-        
+
         #region IEntityService contract
 
         /// <summary>

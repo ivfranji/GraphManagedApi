@@ -109,5 +109,76 @@
             Assert.IsTrue(hasItem);
             await mailboxBEvent.DeleteAsync();
         }
+
+        /// <summary>
+        /// Get mailbox settings.
+        /// </summary>
+        /// <param name="exchangeService">Exchange service.</param>
+        /// <returns></returns>
+        public static async Task GetMailboxSettings(ExchangeService exchangeService)
+        {
+            // set
+            MailboxSettings mailboxSettings = new MailboxSettings()
+            {
+                AutomaticRepliesSetting = new AutomaticRepliesSetting()
+                {
+                    ExternalAudience = ExternalAudienceScope.All,
+                    ExternalReplyMessage = "This is external OOF",
+                    InternalReplyMessage = "This is internal OOF",
+                    Status = AutomaticRepliesStatus.AlwaysEnabled
+                }
+            };
+            
+            // update will return new settings, however using get to test that part of the code
+            await exchangeService.UpdateMailboxSettings(mailboxSettings);
+            mailboxSettings = await exchangeService.GetMailboxSettings();
+
+            Assert.AreEqual(
+                "This is external OOF",
+                mailboxSettings.AutomaticRepliesSetting.ExternalReplyMessage);
+
+            Assert.AreEqual(
+                "This is internal OOF",
+                mailboxSettings.AutomaticRepliesSetting.InternalReplyMessage);
+
+            Assert.AreEqual(
+                AutomaticRepliesStatus.AlwaysEnabled,
+                mailboxSettings.AutomaticRepliesSetting.Status);
+
+            Assert.AreEqual(
+                ExternalAudienceScope.All,
+                mailboxSettings.AutomaticRepliesSetting.ExternalAudience);
+
+            // revert - non Entity objects doesn't currently support property change tracking
+            // so setting non required properties to null. Future versions will support
+            // tracking and this no longer will be issue and necessary. 
+            mailboxSettings.AutomaticRepliesSetting.ExternalAudience = ExternalAudienceScope.None;
+            mailboxSettings.AutomaticRepliesSetting.ExternalReplyMessage = "";
+            mailboxSettings.AutomaticRepliesSetting.InternalReplyMessage = "";
+            mailboxSettings.AutomaticRepliesSetting.Status = AutomaticRepliesStatus.Disabled;
+            mailboxSettings.ArchiveFolder = null;
+            mailboxSettings.TimeZone = null;
+            mailboxSettings.Language = null;
+            mailboxSettings.WorkingHours = null;
+
+            await exchangeService.UpdateMailboxSettings(mailboxSettings);
+            mailboxSettings = await exchangeService.GetMailboxSettings();
+
+            Assert.AreEqual(
+                "",
+                mailboxSettings.AutomaticRepliesSetting.ExternalReplyMessage);
+
+            Assert.AreEqual(
+                "",
+                mailboxSettings.AutomaticRepliesSetting.InternalReplyMessage);
+
+            Assert.AreEqual(
+                AutomaticRepliesStatus.Disabled,
+                mailboxSettings.AutomaticRepliesSetting.Status);
+
+            Assert.AreEqual(
+                ExternalAudienceScope.None,
+                mailboxSettings.AutomaticRepliesSetting.ExternalAudience);
+        }
     }
 }
