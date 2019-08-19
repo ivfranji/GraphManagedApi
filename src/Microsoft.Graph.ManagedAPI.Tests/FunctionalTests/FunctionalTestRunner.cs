@@ -10,6 +10,7 @@
     /// Functional tests.
     /// </summary>
     [TestClass]
+    [TestCategory("Functional")]
     public class FunctionalTestRunner
     {
         /// <summary>
