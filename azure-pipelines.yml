@@ -28,6 +28,14 @@ steps:
 
 - task: DotNetCoreCLI@2
   inputs:
-    command: test
-    projects: '**/*Tests/*.csproj'
-    arguments: '--filter TestCategory!=Functional -v n'
+    command: 'pack'
+    packagesToPack: '**/*.csproj'
+    versioningScheme: 'byBuildNumber'
+    packDirectory: '$(build.artifactStagingDirectory)'
+
+- task: NuGetCommand@2
+  inputs:
+    command: 'push'
+    packagesToPush: '$(build.artifactStagingDirectory)/*.*$(semanticVersion).nupkg'
+    nuGetFeedType: 'external'
+    publishFeedCredentials: 'Nuget'
