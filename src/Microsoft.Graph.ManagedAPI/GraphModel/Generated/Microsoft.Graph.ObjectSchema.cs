@@ -2,11 +2,13 @@ namespace Microsoft.Graph
 {
     using System;
     using System.Collections.Generic;
+    using System.Diagnostics.CodeAnalysis;
     using Microsoft.Graph.ChangeTracking;
 
     /// <summary>
     /// EntityObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EntityObjectSchema : ObjectSchema
     {
 
@@ -21,6 +23,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// CommsApplicationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CommsApplicationObjectSchema : EntityObjectSchema
     {
 
@@ -46,6 +49,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OnlineMeetingObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OnlineMeetingObjectSchema : EntityObjectSchema
     {
 
@@ -149,6 +153,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// CallObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CallObjectSchema : EntityObjectSchema
     {
 
@@ -306,6 +311,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AudioRoutingGroupObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AudioRoutingGroupObjectSchema : EntityObjectSchema
     {
 
@@ -343,6 +349,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ParticipantObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ParticipantObjectSchema : EntityObjectSchema
     {
 
@@ -392,6 +399,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// CommsOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CommsOperationObjectSchema : EntityObjectSchema
     {
 
@@ -435,6 +443,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// CancelMediaProcessingOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CancelMediaProcessingOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -454,6 +463,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ConfigureMixerOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ConfigureMixerOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -473,6 +483,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// InviteParticipantsOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class InviteParticipantsOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -492,6 +503,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MuteParticipantOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MuteParticipantOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -505,6 +517,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MuteParticipantsOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MuteParticipantsOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -524,6 +537,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlayPromptOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlayPromptOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -549,6 +563,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// RecognizeOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class RecognizeOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -604,6 +619,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// RecordOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class RecordOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -677,6 +693,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SubscribeToToneOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SubscribeToToneOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -690,6 +707,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SubscribeVideoOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SubscribeVideoOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -721,6 +739,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UnmuteParticipantOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UnmuteParticipantOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -734,6 +753,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UnmuteParticipantsOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UnmuteParticipantsOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -753,6 +773,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UpdateMetadataOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UpdateMetadataOperationObjectSchema : CommsOperationObjectSchema
     {
 
@@ -772,6 +793,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ExtensionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ExtensionObjectSchema : EntityObjectSchema
     {
     }
@@ -780,6 +802,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DirectoryObjectObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DirectoryObjectObjectSchema : EntityObjectSchema
     {
 
@@ -799,6 +822,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UserObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UserObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -1472,6 +1496,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AppRoleAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AppRoleAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -1527,6 +1552,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// LicenseDetailsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class LicenseDetailsObjectSchema : EntityObjectSchema
     {
 
@@ -1558,6 +1584,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ScopedRoleMembershipObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ScopedRoleMembershipObjectSchema : EntityObjectSchema
     {
 
@@ -1589,6 +1616,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UserActivityObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UserActivityObjectSchema : EntityObjectSchema
     {
 
@@ -1686,6 +1714,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OutlookUserObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OutlookUserObjectSchema : EntityObjectSchema
     {
 
@@ -1723,6 +1752,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OutlookItemObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OutlookItemObjectSchema : EntityObjectSchema
     {
 
@@ -1755,6 +1785,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MessageObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MessageObjectSchema : OutlookItemObjectSchema
     {
 
@@ -1972,6 +2003,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -2363,6 +2395,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MailFolderObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MailFolderObjectSchema : EntityObjectSchema
     {
 
@@ -2448,6 +2481,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// CalendarObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CalendarObjectSchema : EntityObjectSchema
     {
 
@@ -2551,6 +2585,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// CalendarGroupObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CalendarGroupObjectSchema : EntityObjectSchema
     {
 
@@ -2588,6 +2623,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EventObjectSchema : OutlookItemObjectSchema
     {
 
@@ -2817,6 +2853,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PersonObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PersonObjectSchema : EntityObjectSchema
     {
 
@@ -2950,6 +2987,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ContactObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ContactObjectSchema : OutlookItemObjectSchema
     {
 
@@ -3185,6 +3223,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ContactFolderObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ContactFolderObjectSchema : EntityObjectSchema
     {
 
@@ -3240,6 +3279,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// InferenceClassificationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class InferenceClassificationObjectSchema : EntityObjectSchema
     {
 
@@ -3259,6 +3299,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ProfilePhotoObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ProfilePhotoObjectSchema : EntityObjectSchema
     {
 
@@ -3284,6 +3325,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// BaseItemObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BaseItemObjectSchema : EntityObjectSchema
     {
 
@@ -3358,6 +3400,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DriveObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DriveObjectSchema : BaseItemObjectSchema
     {
 
@@ -3437,6 +3480,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OfficeGraphInsightsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OfficeGraphInsightsObjectSchema : EntityObjectSchema
     {
 
@@ -3468,6 +3512,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UserSettingsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UserSettingsObjectSchema : EntityObjectSchema
     {
 
@@ -3493,6 +3538,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerUserObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerUserObjectSchema : EntityObjectSchema
     {
 
@@ -3548,6 +3594,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OnenoteObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OnenoteObjectSchema : EntityObjectSchema
     {
 
@@ -3597,6 +3644,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedDeviceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedDeviceObjectSchema : EntityObjectSchema
     {
 
@@ -4042,6 +4090,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceEnrollmentConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceEnrollmentConfigurationObjectSchema : EntityObjectSchema
     {
 
@@ -4092,6 +4141,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedAppRegistrationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedAppRegistrationObjectSchema : EntityObjectSchema
     {
 
@@ -4214,6 +4264,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsInformationProtectionDeviceRegistrationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsInformationProtectionDeviceRegistrationObjectSchema : EntityObjectSchema
     {
 
@@ -4263,6 +4314,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -4456,6 +4508,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceManagementTroubleshootingEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceManagementTroubleshootingEventObjectSchema : EntityObjectSchema
     {
 
@@ -4499,6 +4552,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileAppIntentAndStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileAppIntentAndStateObjectSchema : EntityObjectSchema
     {
 
@@ -4530,6 +4584,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileAppTroubleshootingEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileAppTroubleshootingEventObjectSchema : DeviceManagementTroubleshootingEventObjectSchema
     {
 
@@ -4573,6 +4628,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AgreementAcceptanceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AgreementAcceptanceObjectSchema : EntityObjectSchema
     {
 
@@ -4634,6 +4690,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// NotificationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class NotificationObjectSchema : EntityObjectSchema
     {
 
@@ -4689,6 +4746,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DirectorySettingObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DirectorySettingObjectSchema : EntityObjectSchema
     {
 
@@ -4720,6 +4778,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EndpointObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EndpointObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -4763,6 +4822,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ConversationThreadObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ConversationThreadObjectSchema : EntityObjectSchema
     {
 
@@ -4830,6 +4890,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ConversationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ConversationObjectSchema : EntityObjectSchema
     {
 
@@ -4879,6 +4940,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SiteObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SiteObjectSchema : BaseItemObjectSchema
     {
 
@@ -4976,6 +5038,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerGroupObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerGroupObjectSchema : EntityObjectSchema
     {
 
@@ -4995,6 +5058,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamObjectSchema : EntityObjectSchema
     {
 
@@ -5110,6 +5174,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ChannelObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ChannelObjectSchema : EntityObjectSchema
     {
 
@@ -5171,6 +5236,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupLifecyclePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupLifecyclePolicyObjectSchema : EntityObjectSchema
     {
 
@@ -5202,6 +5268,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// CommandObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CommandObjectSchema : EntityObjectSchema
     {
 
@@ -5269,6 +5336,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AdministrativeUnitObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AdministrativeUnitObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -5318,6 +5386,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OrganizationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OrganizationObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -5469,6 +5538,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SchemaExtensionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SchemaExtensionObjectSchema : EntityObjectSchema
     {
 
@@ -5512,6 +5582,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DirectoryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DirectoryObjectSchema : EntityObjectSchema
     {
 
@@ -5531,6 +5602,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ExtensionPropertyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ExtensionPropertyObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -5574,6 +5646,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AllowedDataLocationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AllowedDataLocationObjectSchema : EntityObjectSchema
     {
 
@@ -5611,6 +5684,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ApplicationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ApplicationObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -5792,6 +5866,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SynchronizationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SynchronizationObjectSchema : EntityObjectSchema
     {
 
@@ -5823,6 +5898,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OrgContactObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OrgContactObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -5980,6 +6056,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DirectoryObjectPartnerReferenceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DirectoryObjectPartnerReferenceObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -6017,6 +6094,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DirectoryRoleObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DirectoryRoleObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -6060,6 +6138,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DirectoryRoleTemplateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DirectoryRoleTemplateObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -6085,6 +6164,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DirectorySettingTemplateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DirectorySettingTemplateObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -6116,6 +6196,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DomainObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DomainObjectSchema : EntityObjectSchema
     {
 
@@ -6201,6 +6282,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DomainDnsRecordObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DomainDnsRecordObjectSchema : EntityObjectSchema
     {
 
@@ -6244,6 +6326,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DomainDnsCnameRecordObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DomainDnsCnameRecordObjectSchema : DomainDnsRecordObjectSchema
     {
 
@@ -6263,6 +6346,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DomainDnsMxRecordObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DomainDnsMxRecordObjectSchema : DomainDnsRecordObjectSchema
     {
 
@@ -6288,6 +6372,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DomainDnsSrvRecordObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DomainDnsSrvRecordObjectSchema : DomainDnsRecordObjectSchema
     {
 
@@ -6337,6 +6422,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DomainDnsTxtRecordObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DomainDnsTxtRecordObjectSchema : DomainDnsRecordObjectSchema
     {
 
@@ -6356,6 +6442,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DomainDnsUnavailableRecordObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DomainDnsUnavailableRecordObjectSchema : DomainDnsRecordObjectSchema
     {
 
@@ -6375,6 +6462,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OAuth2PermissionGrantObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OAuth2PermissionGrantObjectSchema : EntityObjectSchema
     {
 
@@ -6430,6 +6518,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PolicyObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -6485,6 +6574,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ServicePrincipalObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ServicePrincipalObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -6684,6 +6774,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SubscribedSkuObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SubscribedSkuObjectSchema : EntityObjectSchema
     {
 
@@ -6739,6 +6830,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ContractObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ContractObjectSchema : DirectoryObjectObjectSchema
     {
 
@@ -6776,6 +6868,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ActivityHistoryItemObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ActivityHistoryItemObjectSchema : EntityObjectSchema
     {
 
@@ -6843,6 +6936,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ItemAnalyticsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ItemAnalyticsObjectSchema : EntityObjectSchema
     {
 
@@ -6874,6 +6968,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ColumnDefinitionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ColumnDefinitionObjectSchema : EntityObjectSchema
     {
 
@@ -7007,6 +7102,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ContentTypeObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ContentTypeObjectSchema : EntityObjectSchema
     {
 
@@ -7080,6 +7176,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ListObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ListObjectSchema : BaseItemObjectSchema
     {
 
@@ -7147,6 +7244,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SitePageObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SitePageObjectSchema : BaseItemObjectSchema
     {
 
@@ -7190,6 +7288,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ItemActivityOLDObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ItemActivityOLDObjectSchema : EntityObjectSchema
     {
 
@@ -7233,6 +7332,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ListItemObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ListItemObjectSchema : BaseItemObjectSchema
     {
 
@@ -7288,6 +7388,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DriveItemObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DriveItemObjectSchema : BaseItemObjectSchema
     {
 
@@ -7481,6 +7582,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookObjectSchema : EntityObjectSchema
     {
 
@@ -7530,6 +7632,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PermissionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PermissionObjectSchema : EntityObjectSchema
     {
 
@@ -7597,6 +7700,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SubscriptionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SubscriptionObjectSchema : EntityObjectSchema
     {
 
@@ -7652,6 +7756,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ThumbnailSetObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ThumbnailSetObjectSchema : EntityObjectSchema
     {
 
@@ -7689,6 +7794,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// BaseItemVersionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BaseItemVersionObjectSchema : EntityObjectSchema
     {
 
@@ -7715,6 +7821,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DriveItemVersionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DriveItemVersionObjectSchema : BaseItemVersionObjectSchema
     {
 
@@ -7740,6 +7847,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookApplicationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookApplicationObjectSchema : EntityObjectSchema
     {
 
@@ -7759,6 +7867,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookNamedItemObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookNamedItemObjectSchema : EntityObjectSchema
     {
 
@@ -7814,6 +7923,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookTableObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookTableObjectSchema : EntityObjectSchema
     {
 
@@ -7911,6 +8021,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookWorksheetObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookWorksheetObjectSchema : EntityObjectSchema
     {
 
@@ -7972,6 +8083,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookCommentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookCommentObjectSchema : EntityObjectSchema
     {
 
@@ -8003,6 +8115,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookFunctionsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookFunctionsObjectSchema : EntityObjectSchema
     {
 
@@ -8016,6 +8129,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartObjectSchema : EntityObjectSchema
     {
 
@@ -8101,6 +8215,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartAxesObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartAxesObjectSchema : EntityObjectSchema
     {
 
@@ -8132,6 +8247,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartDataLabelsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartDataLabelsObjectSchema : EntityObjectSchema
     {
 
@@ -8199,6 +8315,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartAreaFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartAreaFormatObjectSchema : EntityObjectSchema
     {
 
@@ -8224,6 +8341,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartLegendObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartLegendObjectSchema : EntityObjectSchema
     {
 
@@ -8261,6 +8379,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartSeriesObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartSeriesObjectSchema : EntityObjectSchema
     {
 
@@ -8292,6 +8411,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartTitleObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartTitleObjectSchema : EntityObjectSchema
     {
 
@@ -8329,6 +8449,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartFillObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartFillObjectSchema : EntityObjectSchema
     {
 
@@ -8342,6 +8463,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartFontObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartFontObjectSchema : EntityObjectSchema
     {
 
@@ -8391,6 +8513,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartAxisObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartAxisObjectSchema : EntityObjectSchema
     {
 
@@ -8452,6 +8575,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartAxisFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartAxisFormatObjectSchema : EntityObjectSchema
     {
 
@@ -8477,6 +8601,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartGridlinesObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartGridlinesObjectSchema : EntityObjectSchema
     {
 
@@ -8502,6 +8627,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartAxisTitleObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartAxisTitleObjectSchema : EntityObjectSchema
     {
 
@@ -8533,6 +8659,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartLineFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartLineFormatObjectSchema : EntityObjectSchema
     {
 
@@ -8552,6 +8679,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartAxisTitleFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartAxisTitleFormatObjectSchema : EntityObjectSchema
     {
 
@@ -8571,6 +8699,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartDataLabelFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartDataLabelFormatObjectSchema : EntityObjectSchema
     {
 
@@ -8596,6 +8725,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartGridlinesFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartGridlinesFormatObjectSchema : EntityObjectSchema
     {
 
@@ -8615,6 +8745,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartLegendFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartLegendFormatObjectSchema : EntityObjectSchema
     {
 
@@ -8640,6 +8771,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartPointObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartPointObjectSchema : EntityObjectSchema
     {
 
@@ -8665,6 +8797,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartPointFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartPointFormatObjectSchema : EntityObjectSchema
     {
 
@@ -8684,6 +8817,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartSeriesFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartSeriesFormatObjectSchema : EntityObjectSchema
     {
 
@@ -8709,6 +8843,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookChartTitleFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookChartTitleFormatObjectSchema : EntityObjectSchema
     {
 
@@ -8734,6 +8869,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookCommentReplyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookCommentReplyObjectSchema : EntityObjectSchema
     {
 
@@ -8759,6 +8895,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookFilterObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookFilterObjectSchema : EntityObjectSchema
     {
 
@@ -8778,6 +8915,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookFormatProtectionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookFormatProtectionObjectSchema : EntityObjectSchema
     {
 
@@ -8803,6 +8941,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookFunctionResultObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookFunctionResultObjectSchema : EntityObjectSchema
     {
 
@@ -8828,6 +8967,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookPivotTableObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookPivotTableObjectSchema : EntityObjectSchema
     {
 
@@ -8853,6 +8993,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookRangeObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookRangeObjectSchema : EntityObjectSchema
     {
 
@@ -8986,6 +9127,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookRangeFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookRangeFormatObjectSchema : EntityObjectSchema
     {
 
@@ -9053,6 +9195,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookRangeSortObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookRangeSortObjectSchema : EntityObjectSchema
     {
 
@@ -9066,6 +9209,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookRangeBorderObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookRangeBorderObjectSchema : EntityObjectSchema
     {
 
@@ -9103,6 +9247,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookRangeFillObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookRangeFillObjectSchema : EntityObjectSchema
     {
 
@@ -9122,6 +9267,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookRangeFontObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookRangeFontObjectSchema : EntityObjectSchema
     {
 
@@ -9171,6 +9317,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookRangeViewObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookRangeViewObjectSchema : EntityObjectSchema
     {
 
@@ -9256,6 +9403,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookTableColumnObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookTableColumnObjectSchema : EntityObjectSchema
     {
 
@@ -9293,6 +9441,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookTableRowObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookTableRowObjectSchema : EntityObjectSchema
     {
 
@@ -9318,6 +9467,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookTableSortObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookTableSortObjectSchema : EntityObjectSchema
     {
 
@@ -9349,6 +9499,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WorkbookWorksheetProtectionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WorkbookWorksheetProtectionObjectSchema : EntityObjectSchema
     {
 
@@ -9374,6 +9525,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AttachmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AttachmentObjectSchema : EntityObjectSchema
     {
 
@@ -9412,6 +9564,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OutlookCategoryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OutlookCategoryObjectSchema : EntityObjectSchema
     {
 
@@ -9437,6 +9590,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OutlookTaskGroupObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OutlookTaskGroupObjectSchema : EntityObjectSchema
     {
 
@@ -9480,6 +9634,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OutlookTaskFolderObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OutlookTaskFolderObjectSchema : EntityObjectSchema
     {
 
@@ -9535,6 +9690,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OutlookTaskObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OutlookTaskObjectSchema : OutlookItemObjectSchema
     {
 
@@ -9656,6 +9812,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MessageRuleObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MessageRuleObjectSchema : EntityObjectSchema
     {
 
@@ -9717,6 +9874,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UserConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UserConfigurationObjectSchema : EntityObjectSchema
     {
 
@@ -9736,6 +9894,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SingleValueLegacyExtendedPropertyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SingleValueLegacyExtendedPropertyObjectSchema : EntityObjectSchema
     {
 
@@ -9755,6 +9914,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MultiValueLegacyExtendedPropertyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MultiValueLegacyExtendedPropertyObjectSchema : EntityObjectSchema
     {
 
@@ -9774,6 +9934,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MentionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MentionObjectSchema : EntityObjectSchema
     {
 
@@ -9835,6 +9996,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// FileAttachmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class FileAttachmentObjectSchema : AttachmentObjectSchema
     {
 
@@ -9866,6 +10028,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ItemAttachmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ItemAttachmentObjectSchema : AttachmentObjectSchema
     {
 
@@ -9885,6 +10048,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EventMessageObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EventMessageObjectSchema : MessageObjectSchema
     {
 
@@ -9958,6 +10122,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MailSearchFolderObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MailSearchFolderObjectSchema : MailFolderObjectSchema
     {
 
@@ -9995,6 +10160,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EventMessageRequestObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EventMessageRequestObjectSchema : EventMessageObjectSchema
     {
 
@@ -10032,6 +10198,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ReferenceAttachmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ReferenceAttachmentObjectSchema : AttachmentObjectSchema
     {
 
@@ -10081,6 +10248,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OpenTypeExtensionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OpenTypeExtensionObjectSchema : ExtensionObjectSchema
     {
 
@@ -10100,6 +10268,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PostObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PostObjectSchema : OutlookItemObjectSchema
     {
 
@@ -10203,6 +10372,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// InferenceClassificationOverrideObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class InferenceClassificationOverrideObjectSchema : EntityObjectSchema
     {
 
@@ -10228,6 +10398,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ColumnLinkObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ColumnLinkObjectSchema : EntityObjectSchema
     {
 
@@ -10247,6 +10418,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// FieldValueSetObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class FieldValueSetObjectSchema : EntityObjectSchema
     {
 
@@ -10260,6 +10432,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ItemActivityObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ItemActivityObjectSchema : EntityObjectSchema
     {
 
@@ -10297,6 +10470,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ItemActivityStatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ItemActivityStatObjectSchema : EntityObjectSchema
     {
 
@@ -10364,6 +10538,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ListItemVersionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ListItemVersionObjectSchema : BaseItemVersionObjectSchema
     {
 
@@ -10383,6 +10558,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SharedDriveItemObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SharedDriveItemObjectSchema : BaseItemObjectSchema
     {
 
@@ -10444,6 +10620,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TrendingObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TrendingObjectSchema : EntityObjectSchema
     {
 
@@ -10487,6 +10664,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SharedInsightObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SharedInsightObjectSchema : EntityObjectSchema
     {
 
@@ -10536,6 +10714,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UsedInsightObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UsedInsightObjectSchema : EntityObjectSchema
     {
 
@@ -10573,6 +10752,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerTaskObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerTaskObjectSchema : EntityObjectSchema
     {
 
@@ -10730,6 +10910,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerPlanObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerPlanObjectSchema : EntityObjectSchema
     {
 
@@ -10791,6 +10972,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerDeltaObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerDeltaObjectSchema : EntityObjectSchema
     {
 
@@ -10804,6 +10986,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerObjectSchema : EntityObjectSchema
     {
 
@@ -10835,6 +11018,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerBucketObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerBucketObjectSchema : EntityObjectSchema
     {
 
@@ -10872,6 +11056,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerTaskDetailsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerTaskDetailsObjectSchema : EntityObjectSchema
     {
 
@@ -10909,6 +11094,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerAssignedToTaskBoardTaskFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerAssignedToTaskBoardTaskFormatObjectSchema : EntityObjectSchema
     {
 
@@ -10934,6 +11120,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerProgressTaskBoardTaskFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerProgressTaskBoardTaskFormatObjectSchema : EntityObjectSchema
     {
 
@@ -10953,6 +11140,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerBucketTaskBoardTaskFormatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerBucketTaskBoardTaskFormatObjectSchema : EntityObjectSchema
     {
 
@@ -10972,6 +11160,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PlannerPlanDetailsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PlannerPlanDetailsObjectSchema : EntityObjectSchema
     {
 
@@ -11003,6 +11192,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OnenoteEntityBaseModelObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OnenoteEntityBaseModelObjectSchema : EntityObjectSchema
     {
 
@@ -11017,6 +11207,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OnenoteEntitySchemaObjectModelObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OnenoteEntitySchemaObjectModelObjectSchema : OnenoteEntityBaseModelObjectSchema
     {
 
@@ -11031,6 +11222,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OnenoteEntityHierarchyModelObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OnenoteEntityHierarchyModelObjectSchema : OnenoteEntitySchemaObjectModelObjectSchema
     {
 
@@ -11063,6 +11255,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// NotebookObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class NotebookObjectSchema : OnenoteEntityHierarchyModelObjectSchema
     {
 
@@ -11124,6 +11317,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OnenoteSectionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OnenoteSectionObjectSchema : OnenoteEntityHierarchyModelObjectSchema
     {
 
@@ -11173,6 +11367,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SectionGroupObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SectionGroupObjectSchema : OnenoteEntityHierarchyModelObjectSchema
     {
 
@@ -11222,6 +11417,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OnenotePageObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OnenotePageObjectSchema : OnenoteEntitySchemaObjectModelObjectSchema
     {
 
@@ -11301,6 +11497,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OnenoteResourceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OnenoteResourceObjectSchema : OnenoteEntityBaseModelObjectSchema
     {
 
@@ -11326,6 +11523,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OperationObjectSchema : EntityObjectSchema
     {
 
@@ -11357,6 +11555,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OnenoteOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OnenoteOperationObjectSchema : OperationObjectSchema
     {
 
@@ -11394,6 +11593,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DirectoryAuditObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DirectoryAuditObjectSchema : EntityObjectSchema
     {
 
@@ -11467,6 +11667,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SignInObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SignInObjectSchema : EntityObjectSchema
     {
 
@@ -11660,6 +11861,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// RestrictedSignInObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class RestrictedSignInObjectSchema : SignInObjectSchema
     {
 
@@ -11679,6 +11881,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AuditLogRootObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AuditLogRootObjectSchema : EntityObjectSchema
     {
 
@@ -11710,6 +11913,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IdentityRiskEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IdentityRiskEventObjectSchema : EntityObjectSchema
     {
 
@@ -11783,6 +11987,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// LocatedRiskEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class LocatedRiskEventObjectSchema : IdentityRiskEventObjectSchema
     {
 
@@ -11803,6 +12008,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ImpossibleTravelRiskEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ImpossibleTravelRiskEventObjectSchema : LocatedRiskEventObjectSchema
     {
 
@@ -11852,6 +12058,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// LeakedCredentialsRiskEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class LeakedCredentialsRiskEventObjectSchema : IdentityRiskEventObjectSchema
     {
 
@@ -11865,6 +12072,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AnonymousIpRiskEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AnonymousIpRiskEventObjectSchema : LocatedRiskEventObjectSchema
     {
 
@@ -11878,6 +12086,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SuspiciousIpRiskEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SuspiciousIpRiskEventObjectSchema : LocatedRiskEventObjectSchema
     {
 
@@ -11891,6 +12100,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UnfamiliarLocationRiskEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UnfamiliarLocationRiskEventObjectSchema : LocatedRiskEventObjectSchema
     {
 
@@ -11904,6 +12114,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MalwareRiskEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MalwareRiskEventObjectSchema : LocatedRiskEventObjectSchema
     {
 
@@ -11929,6 +12140,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// RiskyUserObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class RiskyUserObjectSchema : EntityObjectSchema
     {
 
@@ -11990,6 +12202,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PrivilegedRoleObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PrivilegedRoleObjectSchema : EntityObjectSchema
     {
 
@@ -12027,6 +12240,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PrivilegedRoleSettingsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PrivilegedRoleSettingsObjectSchema : EntityObjectSchema
     {
 
@@ -12100,6 +12314,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PrivilegedRoleAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PrivilegedRoleAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -12149,6 +12364,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PrivilegedRoleSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PrivilegedRoleSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -12192,6 +12408,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PrivilegedOperationEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PrivilegedOperationEventObjectSchema : EntityObjectSchema
     {
 
@@ -12289,6 +12506,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PrivilegedSignupStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PrivilegedSignupStatusObjectSchema : EntityObjectSchema
     {
 
@@ -12314,6 +12532,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PrivilegedRoleAssignmentRequestObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PrivilegedRoleAssignmentRequestObjectSchema : EntityObjectSchema
     {
 
@@ -12399,6 +12618,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PrivilegedApprovalObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PrivilegedApprovalObjectSchema : EntityObjectSchema
     {
 
@@ -12478,6 +12698,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TenantSetupInfoObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TenantSetupInfoObjectSchema : EntityObjectSchema
     {
 
@@ -12527,6 +12748,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// InvitationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class InvitationObjectSchema : EntityObjectSchema
     {
 
@@ -12594,6 +12816,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceManagementObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceManagementObjectSchema : EntityObjectSchema
     {
 
@@ -13069,6 +13292,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TermsAndConditionsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TermsAndConditionsObjectSchema : EntityObjectSchema
     {
 
@@ -13154,6 +13378,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkSettingsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkSettingsObjectSchema : EntityObjectSchema
     {
 
@@ -13221,6 +13446,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkAppConfigurationSchemaObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkAppConfigurationSchemaObjectSchema : EntityObjectSchema
     {
 
@@ -13246,6 +13472,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkEnrollmentProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkEnrollmentProfileObjectSchema : EntityObjectSchema
     {
 
@@ -13319,6 +13546,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidManagedStoreAccountEnterpriseSettingsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidManagedStoreAccountEnterpriseSettingsObjectSchema : EntityObjectSchema
     {
 
@@ -13398,6 +13626,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidManagedStoreAppConfigurationSchemaObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidManagedStoreAppConfigurationSchemaObjectSchema : EntityObjectSchema
     {
 
@@ -13423,6 +13652,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidDeviceOwnerEnrollmentProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidDeviceOwnerEnrollmentProfileObjectSchema : EntityObjectSchema
     {
 
@@ -13502,6 +13732,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// RemoteActionAuditObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class RemoteActionAuditObjectSchema : EntityObjectSchema
     {
 
@@ -13563,6 +13794,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ApplePushNotificationCertificateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ApplePushNotificationCertificateObjectSchema : EntityObjectSchema
     {
 
@@ -13618,6 +13850,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceManagementScriptObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceManagementScriptObjectSchema : EntityObjectSchema
     {
 
@@ -13727,6 +13960,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedDeviceOverviewObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedDeviceOverviewObjectSchema : EntityObjectSchema
     {
 
@@ -13782,6 +14016,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DetectedAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DetectedAppObjectSchema : EntityObjectSchema
     {
 
@@ -13825,6 +14060,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsMalwareInformationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsMalwareInformationObjectSchema : EntityObjectSchema
     {
 
@@ -13874,6 +14110,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DataSharingConsentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DataSharingConsentObjectSchema : EntityObjectSchema
     {
 
@@ -13923,6 +14160,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceConfigurationObjectSchema : EntityObjectSchema
     {
 
@@ -14015,6 +14253,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceCompliancePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceCompliancePolicyObjectSchema : EntityObjectSchema
     {
 
@@ -14101,6 +14340,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SoftwareUpdateStatusSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SoftwareUpdateStatusSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -14204,6 +14444,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceCompliancePolicyDeviceStateSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceCompliancePolicyDeviceStateSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -14271,6 +14512,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceCompliancePolicySettingStateSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceCompliancePolicySettingStateSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -14350,6 +14592,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AdvancedThreatProtectionOnboardingStateSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AdvancedThreatProtectionOnboardingStateSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -14417,6 +14660,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceConfigurationDeviceStateSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceConfigurationDeviceStateSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -14472,6 +14716,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceConfigurationUserStateSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceConfigurationUserStateSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -14527,6 +14772,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// CartToClassAssociationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CartToClassAssociationObjectSchema : EntityObjectSchema
     {
 
@@ -14582,6 +14828,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosUpdateDeviceStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosUpdateDeviceStatusObjectSchema : EntityObjectSchema
     {
 
@@ -14667,6 +14914,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// NdesConnectorObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class NdesConnectorObjectSchema : EntityObjectSchema
     {
 
@@ -14698,6 +14946,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// RestrictedAppsViolationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class RestrictedAppsViolationObjectSchema : EntityObjectSchema
     {
 
@@ -14765,6 +15014,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceConfigurationConflictSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceConfigurationConflictSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -14796,6 +15046,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceCategoryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceCategoryObjectSchema : EntityObjectSchema
     {
 
@@ -14821,6 +15072,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceManagementExchangeConnectorObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceManagementExchangeConnectorObjectSchema : EntityObjectSchema
     {
 
@@ -14888,6 +15140,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceManagementExchangeOnPremisesPolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceManagementExchangeOnPremisesPolicyObjectSchema : EntityObjectSchema
     {
 
@@ -14931,6 +15184,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OnPremisesConditionalAccessSettingsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OnPremisesConditionalAccessSettingsObjectSchema : EntityObjectSchema
     {
 
@@ -14968,6 +15222,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileThreatDefenseConnectorObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileThreatDefenseConnectorObjectSchema : EntityObjectSchema
     {
 
@@ -15059,6 +15314,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceManagementPartnerObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceManagementPartnerObjectSchema : EntityObjectSchema
     {
 
@@ -15132,6 +15388,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagementConditionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagementConditionObjectSchema : EntityObjectSchema
     {
 
@@ -15188,6 +15445,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagementConditionStatementObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagementConditionStatementObjectSchema : EntityObjectSchema
     {
 
@@ -15249,6 +15507,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// NotificationMessageTemplateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class NotificationMessageTemplateObjectSchema : EntityObjectSchema
     {
 
@@ -15298,6 +15557,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// RoleDefinitionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class RoleDefinitionObjectSchema : EntityObjectSchema
     {
 
@@ -15359,6 +15619,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// RoleAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class RoleAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -15408,6 +15669,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceAndAppManagementRoleAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceAndAppManagementRoleAssignmentObjectSchema : RoleAssignmentObjectSchema
     {
 
@@ -15433,6 +15695,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// RoleScopeTagObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class RoleScopeTagObjectSchema : EntityObjectSchema
     {
 
@@ -15458,6 +15721,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ResourceOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ResourceOperationObjectSchema : EntityObjectSchema
     {
 
@@ -15501,6 +15765,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EmbeddedSIMActivationCodePoolObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EmbeddedSIMActivationCodePoolObjectSchema : EntityObjectSchema
     {
 
@@ -15556,6 +15821,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TelecomExpenseManagementPartnerObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TelecomExpenseManagementPartnerObjectSchema : EntityObjectSchema
     {
 
@@ -15599,6 +15865,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsAutopilotSettingsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsAutopilotSettingsObjectSchema : EntityObjectSchema
     {
 
@@ -15630,6 +15897,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsAutopilotDeviceIdentityObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsAutopilotDeviceIdentityObjectSchema : EntityObjectSchema
     {
 
@@ -15733,6 +16001,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsAutopilotDeploymentProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsAutopilotDeploymentProfileObjectSchema : EntityObjectSchema
     {
 
@@ -15807,6 +16076,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ImportedDeviceIdentityObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ImportedDeviceIdentityObjectSchema : EntityObjectSchema
     {
 
@@ -15868,6 +16138,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DepOnboardingSettingObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DepOnboardingSettingObjectSchema : EntityObjectSchema
     {
 
@@ -15971,6 +16242,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ImportedWindowsAutopilotDeviceIdentityUploadObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ImportedWindowsAutopilotDeviceIdentityUploadObjectSchema : EntityObjectSchema
     {
 
@@ -16002,6 +16274,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ImportedWindowsAutopilotDeviceIdentityObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ImportedWindowsAutopilotDeviceIdentityObjectSchema : EntityObjectSchema
     {
 
@@ -16045,6 +16318,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// RemoteAssistancePartnerObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class RemoteAssistancePartnerObjectSchema : EntityObjectSchema
     {
 
@@ -16082,6 +16356,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsInformationProtectionAppLearningSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsInformationProtectionAppLearningSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -16113,6 +16388,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsInformationProtectionNetworkLearningSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsInformationProtectionNetworkLearningSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -16138,6 +16414,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IntuneBrandingProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IntuneBrandingProfileObjectSchema : EntityObjectSchema
     {
 
@@ -16271,6 +16548,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AuditEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AuditEventObjectSchema : EntityObjectSchema
     {
 
@@ -16350,6 +16628,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UserPFXCertificateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UserPFXCertificateObjectSchema : EntityObjectSchema
     {
 
@@ -16435,6 +16714,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyConfigurationObjectSchema : EntityObjectSchema
     {
 
@@ -16484,6 +16764,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyDefinitionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyDefinitionObjectSchema : EntityObjectSchema
     {
 
@@ -16551,6 +16832,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyDefinitionFileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyDefinitionFileObjectSchema : EntityObjectSchema
     {
 
@@ -16612,6 +16894,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceAppManagementObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceAppManagementObjectSchema : EntityObjectSchema
     {
 
@@ -16787,6 +17070,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsManagementAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsManagementAppObjectSchema : EntityObjectSchema
     {
 
@@ -16818,6 +17102,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileAppObjectSchema : EntityObjectSchema
     {
 
@@ -16952,6 +17237,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileAppCategoryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileAppCategoryObjectSchema : EntityObjectSchema
     {
 
@@ -16977,6 +17263,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EnterpriseCodeSigningCertificateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EnterpriseCodeSigningCertificateObjectSchema : EntityObjectSchema
     {
 
@@ -17038,6 +17325,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosLobAppProvisioningConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosLobAppProvisioningConfigurationObjectSchema : EntityObjectSchema
     {
 
@@ -17123,6 +17411,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SymantecCodeSigningCertificateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SymantecCodeSigningCertificateObjectSchema : EntityObjectSchema
     {
 
@@ -17190,6 +17479,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedDeviceMobileAppConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedDeviceMobileAppConfigurationObjectSchema : EntityObjectSchema
     {
 
@@ -17270,6 +17560,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SideLoadingKeyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SideLoadingKeyObjectSchema : EntityObjectSchema
     {
 
@@ -17313,6 +17604,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// VppTokenObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class VppTokenObjectSchema : EntityObjectSchema
     {
 
@@ -17428,6 +17720,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedAppPolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedAppPolicyObjectSchema : EntityObjectSchema
     {
 
@@ -17472,6 +17765,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedAppProtectionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedAppProtectionObjectSchema : ManagedAppPolicyObjectSchema
     {
 
@@ -17666,6 +17960,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TargetedManagedAppProtectionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TargetedManagedAppProtectionObjectSchema : ManagedAppProtectionObjectSchema
     {
 
@@ -17692,6 +17987,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosManagedAppProtectionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosManagedAppProtectionObjectSchema : TargetedManagedAppProtectionObjectSchema
     {
 
@@ -17789,6 +18085,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidManagedAppProtectionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidManagedAppProtectionObjectSchema : TargetedManagedAppProtectionObjectSchema
     {
 
@@ -17874,6 +18171,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DefaultManagedAppProtectionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DefaultManagedAppProtectionObjectSchema : ManagedAppProtectionObjectSchema
     {
 
@@ -18031,6 +18329,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedAppConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedAppConfigurationObjectSchema : ManagedAppPolicyObjectSchema
     {
 
@@ -18045,6 +18344,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TargetedManagedAppConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TargetedManagedAppConfigurationObjectSchema : ManagedAppConfigurationObjectSchema
     {
 
@@ -18088,6 +18388,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsInformationProtectionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsInformationProtectionObjectSchema : ManagedAppPolicyObjectSchema
     {
 
@@ -18246,6 +18547,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MdmWindowsInformationProtectionPolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MdmWindowsInformationProtectionPolicyObjectSchema : WindowsInformationProtectionObjectSchema
     {
 
@@ -18259,6 +18561,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsInformationProtectionPolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsInformationProtectionPolicyObjectSchema : WindowsInformationProtectionObjectSchema
     {
 
@@ -18344,6 +18647,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedAppStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedAppStatusObjectSchema : EntityObjectSchema
     {
 
@@ -18364,6 +18668,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsInformationProtectionWipeActionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsInformationProtectionWipeActionObjectSchema : EntityObjectSchema
     {
 
@@ -18407,6 +18712,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedEBookObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedEBookObjectSchema : EntityObjectSchema
     {
 
@@ -18499,6 +18805,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedEBookCategoryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedEBookCategoryObjectSchema : EntityObjectSchema
     {
 
@@ -18524,6 +18831,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileAppAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileAppAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -18555,6 +18863,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileAppInstallSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileAppInstallSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -18628,6 +18937,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileAppInstallStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileAppInstallStatusObjectSchema : EntityObjectSchema
     {
 
@@ -18719,6 +19029,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UserAppInstallStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UserAppInstallStatusObjectSchema : EntityObjectSchema
     {
 
@@ -18774,6 +19085,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileAppContentFileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileAppContentFileObjectSchema : EntityObjectSchema
     {
 
@@ -18853,6 +19165,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileAppProvisioningConfigGroupAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileAppProvisioningConfigGroupAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -18872,6 +19185,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosLobAppProvisioningConfigurationAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosLobAppProvisioningConfigurationAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -18891,6 +19205,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedDeviceMobileAppConfigurationDeviceStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedDeviceMobileAppConfigurationDeviceStatusObjectSchema : EntityObjectSchema
     {
 
@@ -18952,6 +19267,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedDeviceMobileAppConfigurationUserStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedDeviceMobileAppConfigurationUserStatusObjectSchema : EntityObjectSchema
     {
 
@@ -18995,6 +19311,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedDeviceMobileAppConfigurationAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedDeviceMobileAppConfigurationAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -19014,6 +19331,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedDeviceMobileAppConfigurationDeviceSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedDeviceMobileAppConfigurationDeviceSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -19081,6 +19399,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedDeviceMobileAppConfigurationUserSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedDeviceMobileAppConfigurationUserSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -19142,6 +19461,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosVppAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosVppAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -19233,6 +19553,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosVppAppAssignedLicenseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosVppAppAssignedLicenseObjectSchema : EntityObjectSchema
     {
 
@@ -19270,6 +19591,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSOfficeSuiteAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSOfficeSuiteAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -19283,6 +19605,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OfficeSuiteAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OfficeSuiteAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -19368,6 +19691,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -19388,6 +19712,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedAndroidStoreAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedAndroidStoreAppObjectSchema : ManagedAppObjectSchema
     {
 
@@ -19419,6 +19744,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedIOSStoreAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedIOSStoreAppObjectSchema : ManagedAppObjectSchema
     {
 
@@ -19456,6 +19782,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedMobileLobAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedMobileLobAppObjectSchema : ManagedAppObjectSchema
     {
 
@@ -19488,6 +19815,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileAppContentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileAppContentObjectSchema : EntityObjectSchema
     {
 
@@ -19513,6 +19841,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileContainedAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileContainedAppObjectSchema : EntityObjectSchema
     {
     }
@@ -19521,6 +19850,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsUniversalAppXContainedAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsUniversalAppXContainedAppObjectSchema : MobileContainedAppObjectSchema
     {
 
@@ -19540,6 +19870,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MicrosoftStoreForBusinessContainedAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MicrosoftStoreForBusinessContainedAppObjectSchema : MobileContainedAppObjectSchema
     {
 
@@ -19559,6 +19890,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedAndroidLobAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedAndroidLobAppObjectSchema : ManagedMobileLobAppObjectSchema
     {
 
@@ -19608,6 +19940,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedIOSLobAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedIOSLobAppObjectSchema : ManagedMobileLobAppObjectSchema
     {
 
@@ -19663,6 +19996,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MobileLobAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MobileLobAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -19695,6 +20029,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Win32LobAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Win32LobAppObjectSchema : MobileLobAppObjectSchema
     {
 
@@ -19786,6 +20121,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSLobAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSLobAppObjectSchema : MobileLobAppObjectSchema
     {
 
@@ -19853,6 +20189,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsMobileMSIObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsMobileMSIObjectSchema : MobileLobAppObjectSchema
     {
 
@@ -19902,6 +20239,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhone81AppXObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhone81AppXObjectSchema : MobileLobAppObjectSchema
     {
 
@@ -19963,6 +20301,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhone81AppXBundleObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhone81AppXBundleObjectSchema : WindowsPhone81AppXObjectSchema
     {
 
@@ -19982,6 +20321,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsUniversalAppXObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsUniversalAppXObjectSchema : MobileLobAppObjectSchema
     {
 
@@ -20049,6 +20389,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsAppXObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsAppXObjectSchema : MobileLobAppObjectSchema
     {
 
@@ -20104,6 +20445,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhoneXAPObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhoneXAPObjectSchema : MobileLobAppObjectSchema
     {
 
@@ -20135,6 +20477,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidLobAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidLobAppObjectSchema : MobileLobAppObjectSchema
     {
 
@@ -20184,6 +20527,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosLobAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosLobAppObjectSchema : MobileLobAppObjectSchema
     {
 
@@ -20239,6 +20583,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -20282,6 +20627,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidManagedStoreAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidManagedStoreAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -20325,6 +20671,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOsVppAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOsVppAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -20410,6 +20757,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOsVppAppAssignedLicenseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOsVppAppAssignedLicenseObjectSchema : EntityObjectSchema
     {
 
@@ -20447,6 +20795,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MicrosoftStoreForBusinessAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MicrosoftStoreForBusinessAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -20496,6 +20845,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WebAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WebAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -20521,6 +20871,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhone81StoreAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhone81StoreAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -20540,6 +20891,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsStoreAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsStoreAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -20559,6 +20911,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidStoreAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidStoreAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -20596,6 +20949,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosVppAppAssignedDeviceLicenseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosVppAppAssignedDeviceLicenseObjectSchema : IosVppAppAssignedLicenseObjectSchema
     {
 
@@ -20621,6 +20975,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosVppAppAssignedUserLicenseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosVppAppAssignedUserLicenseObjectSchema : IosVppAppAssignedLicenseObjectSchema
     {
 
@@ -20634,6 +20989,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosStoreAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosStoreAppObjectSchema : MobileAppObjectSchema
     {
 
@@ -20671,6 +21027,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkMobileAppConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkMobileAppConfigurationObjectSchema : ManagedDeviceMobileAppConfigurationObjectSchema
     {
 
@@ -20702,6 +21059,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidManagedStoreAppConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidManagedStoreAppConfigurationObjectSchema : ManagedDeviceMobileAppConfigurationObjectSchema
     {
 
@@ -20733,6 +21091,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosMobileAppConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosMobileAppConfigurationObjectSchema : ManagedDeviceMobileAppConfigurationObjectSchema
     {
 
@@ -20758,6 +21117,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TermsAndConditionsGroupAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TermsAndConditionsGroupAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -20783,6 +21143,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TermsAndConditionsAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TermsAndConditionsAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -20802,6 +21163,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TermsAndConditionsAcceptanceStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TermsAndConditionsAcceptanceStatusObjectSchema : EntityObjectSchema
     {
 
@@ -20839,6 +21201,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceManagementScriptAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceManagementScriptAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -20858,6 +21221,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceManagementScriptGroupAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceManagementScriptGroupAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -20877,6 +21241,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceManagementScriptRunSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceManagementScriptRunSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -20914,6 +21279,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceManagementScriptDeviceStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceManagementScriptDeviceStateObjectSchema : EntityObjectSchema
     {
 
@@ -20963,6 +21329,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceManagementScriptUserStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceManagementScriptUserStateObjectSchema : EntityObjectSchema
     {
 
@@ -21000,6 +21367,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceConfigurationStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceConfigurationStateObjectSchema : EntityObjectSchema
     {
 
@@ -21061,6 +21429,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsProtectionStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsProtectionStateObjectSchema : EntityObjectSchema
     {
 
@@ -21182,6 +21551,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceCompliancePolicyStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceCompliancePolicyStateObjectSchema : EntityObjectSchema
     {
 
@@ -21243,6 +21613,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedDeviceMobileAppConfigurationStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedDeviceMobileAppConfigurationStateObjectSchema : EntityObjectSchema
     {
 
@@ -21298,6 +21669,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AppLogCollectionRequestObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AppLogCollectionRequestObjectSchema : EntityObjectSchema
     {
 
@@ -21335,6 +21707,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsDeviceMalwareStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsDeviceMalwareStateObjectSchema : EntityObjectSchema
     {
 
@@ -21414,6 +21787,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsManagedDeviceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsManagedDeviceObjectSchema : ManagedDeviceObjectSchema
     {
 
@@ -21427,6 +21801,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsManagementAppHealthSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsManagementAppHealthSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -21458,6 +21833,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsManagementAppHealthStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsManagementAppHealthStateObjectSchema : EntityObjectSchema
     {
 
@@ -21501,6 +21877,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ReportRootObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ReportRootObjectSchema : EntityObjectSchema
     {
 
@@ -21514,6 +21891,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceConfigurationGroupAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceConfigurationGroupAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -21545,6 +21923,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceConfigurationAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceConfigurationAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -21564,6 +21943,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceConfigurationDeviceStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceConfigurationDeviceStatusObjectSchema : EntityObjectSchema
     {
 
@@ -21625,6 +22005,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceConfigurationUserStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceConfigurationUserStatusObjectSchema : EntityObjectSchema
     {
 
@@ -21668,6 +22049,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceConfigurationDeviceOverviewObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceConfigurationDeviceOverviewObjectSchema : EntityObjectSchema
     {
 
@@ -21735,6 +22117,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceConfigurationUserOverviewObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceConfigurationUserOverviewObjectSchema : EntityObjectSchema
     {
 
@@ -21796,6 +22179,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SettingStateDeviceSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SettingStateDeviceSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -21863,6 +22247,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceCompliancePolicyAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceCompliancePolicyAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -21882,6 +22267,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceComplianceScheduledActionForRuleObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceComplianceScheduledActionForRuleObjectSchema : EntityObjectSchema
     {
 
@@ -21907,6 +22293,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceComplianceDeviceStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceComplianceDeviceStatusObjectSchema : EntityObjectSchema
     {
 
@@ -21968,6 +22355,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceComplianceUserStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceComplianceUserStatusObjectSchema : EntityObjectSchema
     {
 
@@ -22011,6 +22399,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceComplianceDeviceOverviewObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceComplianceDeviceOverviewObjectSchema : EntityObjectSchema
     {
 
@@ -22078,6 +22467,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceComplianceUserOverviewObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceComplianceUserOverviewObjectSchema : EntityObjectSchema
     {
 
@@ -22139,6 +22529,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceComplianceActionItemObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceComplianceActionItemObjectSchema : EntityObjectSchema
     {
 
@@ -22176,6 +22567,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsUpdateForBusinessConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsUpdateForBusinessConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -22363,6 +22755,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPrivacyDataAccessControlItemObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPrivacyDataAccessControlItemObjectSchema : EntityObjectSchema
     {
 
@@ -22400,6 +22793,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsAssignedAccessProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsAssignedAccessProfileObjectSchema : EntityObjectSchema
     {
 
@@ -22449,6 +22843,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidDeviceOwnerGeneralDeviceConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidDeviceOwnerGeneralDeviceConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -22750,6 +23145,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidDeviceOwnerWiFiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidDeviceOwnerWiFiConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -22805,6 +23201,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkEasEmailProfileBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkEasEmailProfileBaseObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -22855,6 +23252,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkCertificateProfileBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkCertificateProfileBaseObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -22899,6 +23297,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkTrustedRootCertificateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkTrustedRootCertificateObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -22924,6 +23323,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkPkcsCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkPkcsCertificateProfileObjectSchema : AndroidForWorkCertificateProfileBaseObjectSchema
     {
 
@@ -22973,6 +23373,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedDeviceCertificateStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedDeviceCertificateStateObjectSchema : EntityObjectSchema
     {
 
@@ -23130,6 +23531,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkScepCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkScepCertificateProfileObjectSchema : AndroidForWorkCertificateProfileBaseObjectSchema
     {
 
@@ -23203,6 +23605,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkGmailEasConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkGmailEasConfigurationObjectSchema : AndroidForWorkEasEmailProfileBaseObjectSchema
     {
 
@@ -23216,6 +23619,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkNineWorkEasConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkNineWorkEasConfigurationObjectSchema : AndroidForWorkEasEmailProfileBaseObjectSchema
     {
 
@@ -23247,6 +23651,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidCertificateProfileBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidCertificateProfileBaseObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -23297,6 +23702,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidTrustedRootCertificateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidTrustedRootCertificateObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -23322,6 +23728,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkImportedPFXCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkImportedPFXCertificateProfileObjectSchema : AndroidCertificateProfileBaseObjectSchema
     {
 
@@ -23347,6 +23754,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidImportedPFXCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidImportedPFXCertificateProfileObjectSchema : AndroidCertificateProfileBaseObjectSchema
     {
 
@@ -23372,6 +23780,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidPkcsCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidPkcsCertificateProfileObjectSchema : AndroidCertificateProfileBaseObjectSchema
     {
 
@@ -23415,6 +23824,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidScepCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidScepCertificateProfileObjectSchema : AndroidCertificateProfileBaseObjectSchema
     {
 
@@ -23470,6 +23880,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidCustomConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidCustomConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -23489,6 +23900,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidEasEmailProfileConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidEasEmailProfileConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -23604,6 +24016,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkCustomConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkCustomConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -23623,6 +24036,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkWiFiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkWiFiConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -23666,6 +24080,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkEnterpriseWiFiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkEnterpriseWiFiConfigurationObjectSchema : AndroidForWorkWiFiConfigurationObjectSchema
     {
 
@@ -23721,6 +24136,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkGeneralDeviceConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkGeneralDeviceConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -23950,6 +24366,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkVpnConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkVpnConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -24023,6 +24440,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidGeneralDeviceConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidGeneralDeviceConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -24330,6 +24748,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidVpnConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidVpnConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -24403,6 +24822,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWiFiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWiFiConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -24446,6 +24866,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidEnterpriseWiFiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidEnterpriseWiFiConfigurationObjectSchema : AndroidWiFiConfigurationObjectSchema
     {
 
@@ -24501,6 +24922,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileCertificateProfileBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileCertificateProfileBaseObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -24545,6 +24967,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileTrustedRootCertificateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileTrustedRootCertificateObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -24570,6 +24993,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfilePkcsCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfilePkcsCertificateProfileObjectSchema : AndroidWorkProfileCertificateProfileBaseObjectSchema
     {
 
@@ -24613,6 +25037,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileScepCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileScepCertificateProfileObjectSchema : AndroidWorkProfileCertificateProfileBaseObjectSchema
     {
 
@@ -24686,6 +25111,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileCustomConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileCustomConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -24705,6 +25131,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileEasEmailProfileBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileEasEmailProfileBaseObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -24755,6 +25182,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileGmailEasConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileGmailEasConfigurationObjectSchema : AndroidWorkProfileEasEmailProfileBaseObjectSchema
     {
 
@@ -24768,6 +25196,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileNineWorkEasConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileNineWorkEasConfigurationObjectSchema : AndroidWorkProfileEasEmailProfileBaseObjectSchema
     {
 
@@ -24799,6 +25228,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileGeneralDeviceConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileGeneralDeviceConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -25028,6 +25458,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileVpnConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileVpnConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -25101,6 +25532,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileWiFiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileWiFiConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -25144,6 +25576,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileEnterpriseWiFiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileEnterpriseWiFiConfigurationObjectSchema : AndroidWorkProfileWiFiConfigurationObjectSchema
     {
 
@@ -25199,6 +25632,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosCertificateProfileObjectSchema : DeviceConfigurationObjectSchema
     {
     }
@@ -25207,6 +25641,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosCertificateProfileBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosCertificateProfileBaseObjectSchema : IosCertificateProfileObjectSchema
     {
 
@@ -25245,6 +25680,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosPkcsCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosPkcsCertificateProfileObjectSchema : IosCertificateProfileBaseObjectSchema
     {
 
@@ -25288,6 +25724,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosScepCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosScepCertificateProfileObjectSchema : IosCertificateProfileBaseObjectSchema
     {
 
@@ -25361,6 +25798,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosTrustedRootCertificateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosTrustedRootCertificateObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -25386,6 +25824,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosImportedPFXCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosImportedPFXCertificateProfileObjectSchema : IosCertificateProfileObjectSchema
     {
 
@@ -25411,6 +25850,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosCustomConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosCustomConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -25442,6 +25882,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosEduDeviceConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosEduDeviceConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -25473,6 +25914,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosEducationDeviceConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosEducationDeviceConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -25486,6 +25928,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosGeneralDeviceConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosGeneralDeviceConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -26411,6 +26854,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosUpdateConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosUpdateConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -26460,6 +26904,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosWiFiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosWiFiConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -26533,6 +26978,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosEnterpriseWiFiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosEnterpriseWiFiConfigurationObjectSchema : IosWiFiConfigurationObjectSchema
     {
 
@@ -26594,6 +27040,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSCertificateProfileBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSCertificateProfileBaseObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -26632,6 +27079,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSImportedPFXCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSImportedPFXCertificateProfileObjectSchema : MacOSCertificateProfileBaseObjectSchema
     {
 
@@ -26657,6 +27105,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSScepCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSScepCertificateProfileObjectSchema : MacOSCertificateProfileBaseObjectSchema
     {
 
@@ -26736,6 +27185,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSTrustedRootCertificateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSTrustedRootCertificateObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -26761,6 +27211,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSCustomConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSCustomConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -26792,6 +27243,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSEndpointProtectionConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSEndpointProtectionConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -26841,6 +27293,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSGeneralDeviceConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSGeneralDeviceConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -27076,6 +27529,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSWiFiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSWiFiConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -27149,6 +27603,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSEnterpriseWiFiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSEnterpriseWiFiConfigurationObjectSchema : MacOSWiFiConfigurationObjectSchema
     {
 
@@ -27210,6 +27665,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UnsupportedDeviceConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UnsupportedDeviceConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -27235,6 +27691,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EasEmailProfileConfigurationBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EasEmailProfileConfigurationBaseObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -27267,6 +27724,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosEasEmailProfileConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosEasEmailProfileConfigurationObjectSchema : EasEmailProfileConfigurationBaseObjectSchema
     {
 
@@ -27406,6 +27864,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10EasEmailProfileConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10EasEmailProfileConfigurationObjectSchema : EasEmailProfileConfigurationBaseObjectSchema
     {
 
@@ -27473,6 +27932,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhoneEASEmailProfileConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhoneEASEmailProfileConfigurationObjectSchema : EasEmailProfileConfigurationBaseObjectSchema
     {
 
@@ -27546,6 +28006,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AppleDeviceFeaturesConfigurationBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AppleDeviceFeaturesConfigurationBaseObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -27560,6 +28021,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosDeviceFeaturesConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosDeviceFeaturesConfigurationObjectSchema : AppleDeviceFeaturesConfigurationBaseObjectSchema
     {
 
@@ -27633,6 +28095,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSDeviceFeaturesConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSDeviceFeaturesConfigurationObjectSchema : AppleDeviceFeaturesConfigurationBaseObjectSchema
     {
 
@@ -27646,6 +28109,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AppleVpnConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AppleVpnConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -27750,6 +28214,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosVpnConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosVpnConfigurationObjectSchema : AppleVpnConfigurationObjectSchema
     {
 
@@ -27799,6 +28264,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSVpnConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSVpnConfigurationObjectSchema : AppleVpnConfigurationObjectSchema
     {
 
@@ -27818,6 +28284,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10EndpointProtectionConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10EndpointProtectionConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -28845,6 +29312,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10GeneralConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10GeneralConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30412,6 +30880,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsDefenderAdvancedThreatProtectionConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsDefenderAdvancedThreatProtectionConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30467,6 +30936,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EditionUpgradeConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EditionUpgradeConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30510,6 +30980,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10NetworkBoundaryConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10NetworkBoundaryConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30529,6 +31000,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10CustomConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10CustomConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30548,6 +31020,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsDeliveryOptimizationConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsDeliveryOptimizationConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30567,6 +31040,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsIdentityProtectionConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsIdentityProtectionConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30664,6 +31138,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsKioskConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsKioskConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30737,6 +31212,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10EnterpriseModernAppManagementConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10EnterpriseModernAppManagementConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30756,6 +31232,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SharedPCConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SharedPCConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30871,6 +31348,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10PFXImportCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10PFXImportCertificateProfileObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30890,6 +31368,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10SecureAssessmentConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10SecureAssessmentConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -30939,6 +31418,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsWifiConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsWifiConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -31030,6 +31510,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsWifiEnterpriseEAPConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsWifiEnterpriseEAPConfigurationObjectSchema : WindowsWifiConfigurationObjectSchema
     {
 
@@ -31133,6 +31614,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows81TrustedRootCertificateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows81TrustedRootCertificateObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -31164,6 +31646,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsCertificateProfileBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsCertificateProfileBaseObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -31208,6 +31691,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10ImportedPFXCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10ImportedPFXCertificateProfileObjectSchema : WindowsCertificateProfileBaseObjectSchema
     {
 
@@ -31233,6 +31717,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhone81ImportedPFXCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhone81ImportedPFXCertificateProfileObjectSchema : WindowsCertificateProfileBaseObjectSchema
     {
 
@@ -31258,6 +31743,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10CertificateProfileBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10CertificateProfileBaseObjectSchema : WindowsCertificateProfileBaseObjectSchema
     {
     }
@@ -31266,6 +31752,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10PkcsCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10PkcsCertificateProfileObjectSchema : Windows10CertificateProfileBaseObjectSchema
     {
 
@@ -31315,6 +31802,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows81CertificateProfileBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows81CertificateProfileBaseObjectSchema : WindowsCertificateProfileBaseObjectSchema
     {
 
@@ -31335,6 +31823,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows81SCEPCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows81SCEPCertificateProfileObjectSchema : Windows81CertificateProfileBaseObjectSchema
     {
 
@@ -31402,6 +31891,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows81WifiImportConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows81WifiImportConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -31433,6 +31923,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsDomainJoinConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsDomainJoinConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -31476,6 +31967,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhone81CustomConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhone81CustomConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -31495,6 +31987,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhone81TrustedRootCertificateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhone81TrustedRootCertificateObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -31520,6 +32013,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsUpdateStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsUpdateStateObjectSchema : EntityObjectSchema
     {
 
@@ -31587,6 +32081,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsVpnConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsVpnConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -31613,6 +32108,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10VpnConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10VpnConfigurationObjectSchema : WindowsVpnConfigurationObjectSchema
     {
 
@@ -31764,6 +32260,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows81VpnConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows81VpnConfigurationObjectSchema : WindowsVpnConfigurationObjectSchema
     {
 
@@ -31807,6 +32304,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhone81VpnConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhone81VpnConfigurationObjectSchema : Windows81VpnConfigurationObjectSchema
     {
 
@@ -31856,6 +32354,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhone81CertificateProfileBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhone81CertificateProfileBaseObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -31906,6 +32405,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhone81SCEPCertificateProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhone81SCEPCertificateProfileObjectSchema : WindowsPhone81CertificateProfileBaseObjectSchema
     {
 
@@ -31967,6 +32467,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows81GeneralConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows81GeneralConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -32190,6 +32691,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhone81GeneralConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhone81GeneralConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -32377,6 +32879,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10TeamGeneralConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10TeamGeneralConfigurationObjectSchema : DeviceConfigurationObjectSchema
     {
 
@@ -32510,6 +33013,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceCompliancePolicyGroupAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceCompliancePolicyGroupAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -32541,6 +33045,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidForWorkCompliancePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidForWorkCompliancePolicyObjectSchema : DeviceCompliancePolicyObjectSchema
     {
 
@@ -32686,6 +33191,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidCompliancePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidCompliancePolicyObjectSchema : DeviceCompliancePolicyObjectSchema
     {
 
@@ -32843,6 +33349,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidDeviceComplianceLocalActionBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidDeviceComplianceLocalActionBaseObjectSchema : EntityObjectSchema
     {
 
@@ -32857,6 +33364,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidDeviceComplianceLocalActionLockDeviceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidDeviceComplianceLocalActionLockDeviceObjectSchema : AndroidDeviceComplianceLocalActionBaseObjectSchema
     {
 
@@ -32870,6 +33378,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidDeviceComplianceLocalActionLockDeviceWithPasscodeObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidDeviceComplianceLocalActionLockDeviceWithPasscodeObjectSchema : AndroidDeviceComplianceLocalActionBaseObjectSchema
     {
 
@@ -32895,6 +33404,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidWorkProfileCompliancePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidWorkProfileCompliancePolicyObjectSchema : DeviceCompliancePolicyObjectSchema
     {
 
@@ -33040,6 +33550,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosCompliancePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosCompliancePolicyObjectSchema : DeviceCompliancePolicyObjectSchema
     {
 
@@ -33161,6 +33672,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MacOSCompliancePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MacOSCompliancePolicyObjectSchema : DeviceCompliancePolicyObjectSchema
     {
 
@@ -33294,6 +33806,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DefaultDeviceCompliancePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DefaultDeviceCompliancePolicyObjectSchema : DeviceCompliancePolicyObjectSchema
     {
 
@@ -33307,6 +33820,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10CompliancePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10CompliancePolicyObjectSchema : DeviceCompliancePolicyObjectSchema
     {
 
@@ -33500,6 +34014,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10MobileCompliancePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10MobileCompliancePolicyObjectSchema : DeviceCompliancePolicyObjectSchema
     {
 
@@ -33621,6 +34136,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows81CompliancePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows81CompliancePolicyObjectSchema : DeviceCompliancePolicyObjectSchema
     {
 
@@ -33700,6 +34216,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsPhone81CompliancePolicyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsPhone81CompliancePolicyObjectSchema : DeviceCompliancePolicyObjectSchema
     {
 
@@ -33779,6 +34296,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceSetupConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceSetupConfigurationObjectSchema : EntityObjectSchema
     {
 
@@ -33817,6 +34335,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceComplianceSettingStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceComplianceSettingStateObjectSchema : EntityObjectSchema
     {
 
@@ -33902,6 +34421,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AdvancedThreatProtectionOnboardingDeviceSettingStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AdvancedThreatProtectionOnboardingDeviceSettingStateObjectSchema : EntityObjectSchema
     {
 
@@ -33987,6 +34507,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EnrollmentConfigurationAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EnrollmentConfigurationAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -34006,6 +34527,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceEnrollmentLimitConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceEnrollmentLimitConfigurationObjectSchema : DeviceEnrollmentConfigurationObjectSchema
     {
 
@@ -34025,6 +34547,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceEnrollmentPlatformRestrictionsConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceEnrollmentPlatformRestrictionsConfigurationObjectSchema : DeviceEnrollmentConfigurationObjectSchema
     {
 
@@ -34080,6 +34603,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Windows10EnrollmentCompletionPageConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Windows10EnrollmentCompletionPageConfigurationObjectSchema : DeviceEnrollmentConfigurationObjectSchema
     {
 
@@ -34141,6 +34665,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceEnrollmentWindowsHelloForBusinessConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceEnrollmentWindowsHelloForBusinessConfigurationObjectSchema : DeviceEnrollmentConfigurationObjectSchema
     {
 
@@ -34226,6 +34751,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// LocationManagementConditionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class LocationManagementConditionObjectSchema : ManagementConditionObjectSchema
     {
     }
@@ -34234,6 +34760,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// CircularGeofenceManagementConditionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CircularGeofenceManagementConditionObjectSchema : LocationManagementConditionObjectSchema
     {
 
@@ -34265,6 +34792,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// NetworkManagementConditionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class NetworkManagementConditionObjectSchema : ManagementConditionObjectSchema
     {
     }
@@ -34273,6 +34801,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// NetworkIPv4ConfigurationManagementConditionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class NetworkIPv4ConfigurationManagementConditionObjectSchema : NetworkManagementConditionObjectSchema
     {
 
@@ -34316,6 +34845,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// NetworkIPv6ConfigurationManagementConditionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class NetworkIPv6ConfigurationManagementConditionObjectSchema : NetworkManagementConditionObjectSchema
     {
 
@@ -34353,6 +34883,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedMobileAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedMobileAppObjectSchema : EntityObjectSchema
     {
 
@@ -34378,6 +34909,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TargetedManagedAppPolicyAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TargetedManagedAppPolicyAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -34397,6 +34929,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedAppOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedAppOperationObjectSchema : EntityObjectSchema
     {
 
@@ -34434,6 +34967,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedAppPolicyDeploymentSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedAppPolicyDeploymentSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -34477,6 +35011,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsInformationProtectionAppLockerFileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsInformationProtectionAppLockerFileObjectSchema : EntityObjectSchema
     {
 
@@ -34514,6 +35049,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosManagedAppRegistrationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosManagedAppRegistrationObjectSchema : ManagedAppRegistrationObjectSchema
     {
 
@@ -34527,6 +35063,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AndroidManagedAppRegistrationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AndroidManagedAppRegistrationObjectSchema : ManagedAppRegistrationObjectSchema
     {
 
@@ -34546,6 +35083,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedAppStatusRawObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedAppStatusRawObjectSchema : ManagedAppStatusObjectSchema
     {
 
@@ -34565,6 +35103,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// LocalizedNotificationMessageObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class LocalizedNotificationMessageObjectSchema : EntityObjectSchema
     {
 
@@ -34608,6 +35147,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceAndAppManagementRoleDefinitionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceAndAppManagementRoleDefinitionObjectSchema : RoleDefinitionObjectSchema
     {
 
@@ -34621,6 +35161,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EmbeddedSIMActivationCodePoolAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EmbeddedSIMActivationCodePoolAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -34640,6 +35181,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EmbeddedSIMDeviceStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EmbeddedSIMDeviceStateObjectSchema : EntityObjectSchema
     {
 
@@ -34701,6 +35243,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ManagedEBookAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ManagedEBookAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -34726,6 +35269,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EBookInstallSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EBookInstallSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -34775,6 +35319,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DeviceInstallStateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DeviceInstallStateObjectSchema : EntityObjectSchema
     {
 
@@ -34836,6 +35381,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UserInstallStateSummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UserInstallStateSummaryObjectSchema : EntityObjectSchema
     {
 
@@ -34879,6 +35425,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosVppEBookAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosVppEBookAssignmentObjectSchema : ManagedEBookAssignmentObjectSchema
     {
 
@@ -34892,6 +35439,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IosVppEBookObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IosVppEBookObjectSchema : ManagedEBookObjectSchema
     {
 
@@ -34959,6 +35507,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ImportedDeviceIdentityResultObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ImportedDeviceIdentityResultObjectSchema : ImportedDeviceIdentityObjectSchema
     {
 
@@ -34978,6 +35527,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsAutopilotDeploymentProfileAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsAutopilotDeploymentProfileAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -34997,6 +35547,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EnrollmentProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EnrollmentProfileObjectSchema : EntityObjectSchema
     {
 
@@ -35046,6 +35597,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DepEnrollmentBaseProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DepEnrollmentBaseProfileObjectSchema : EnrollmentProfileObjectSchema
     {
 
@@ -35162,6 +35714,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DepIOSEnrollmentProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DepIOSEnrollmentProfileObjectSchema : DepEnrollmentBaseProfileObjectSchema
     {
 
@@ -35265,6 +35818,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DepMacOSEnrollmentProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DepMacOSEnrollmentProfileObjectSchema : DepEnrollmentBaseProfileObjectSchema
     {
 
@@ -35296,6 +35850,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ImportedAppleDeviceIdentityObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ImportedAppleDeviceIdentityObjectSchema : EntityObjectSchema
     {
 
@@ -35369,6 +35924,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ImportedAppleDeviceIdentityResultObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ImportedAppleDeviceIdentityResultObjectSchema : ImportedAppleDeviceIdentityObjectSchema
     {
 
@@ -35388,6 +35944,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ActiveDirectoryWindowsAutopilotDeploymentProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ActiveDirectoryWindowsAutopilotDeploymentProfileObjectSchema : WindowsAutopilotDeploymentProfileObjectSchema
     {
 
@@ -35407,6 +35964,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AzureADWindowsAutopilotDeploymentProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AzureADWindowsAutopilotDeploymentProfileObjectSchema : WindowsAutopilotDeploymentProfileObjectSchema
     {
 
@@ -35420,6 +35978,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DepEnrollmentProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DepEnrollmentProfileObjectSchema : EnrollmentProfileObjectSchema
     {
 
@@ -35577,6 +36136,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IntuneBrandingProfileAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IntuneBrandingProfileAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -35596,6 +36156,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Office365ActivationsUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Office365ActivationsUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -35633,6 +36194,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Office365ActivationCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Office365ActivationCountsObjectSchema : EntityObjectSchema
     {
 
@@ -35688,6 +36250,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Office365ActivationsUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Office365ActivationsUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -35731,6 +36294,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Office365ActiveUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Office365ActiveUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -35888,6 +36452,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Office365ServicesUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Office365ServicesUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -35997,6 +36562,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Office365ActiveUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Office365ActiveUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -36070,6 +36636,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Office365GroupsActivityDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Office365GroupsActivityDetailObjectSchema : EntityObjectSchema
     {
 
@@ -36191,6 +36758,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Office365GroupsActivityCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Office365GroupsActivityCountsObjectSchema : EntityObjectSchema
     {
 
@@ -36246,6 +36814,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Office365GroupsActivityGroupCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Office365GroupsActivityGroupCountsObjectSchema : EntityObjectSchema
     {
 
@@ -36289,6 +36858,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Office365GroupsActivityStorageObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Office365GroupsActivityStorageObjectSchema : EntityObjectSchema
     {
 
@@ -36332,6 +36902,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// Office365GroupsActivityFileCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class Office365GroupsActivityFileCountsObjectSchema : EntityObjectSchema
     {
 
@@ -36375,6 +36946,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EmailActivityUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EmailActivityUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -36454,6 +37026,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EmailActivitySummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EmailActivitySummaryObjectSchema : EntityObjectSchema
     {
 
@@ -36503,6 +37076,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EmailAppUsageUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EmailAppUsageUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -36612,6 +37186,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EmailAppUsageAppsUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EmailAppUsageAppsUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -36691,6 +37266,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EmailAppUsageUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EmailAppUsageUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -36776,6 +37352,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EmailAppUsageVersionsUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EmailAppUsageVersionsUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -36831,6 +37408,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MailboxUsageDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MailboxUsageDetailObjectSchema : EntityObjectSchema
     {
 
@@ -36922,6 +37500,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MailboxUsageMailboxCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MailboxUsageMailboxCountsObjectSchema : EntityObjectSchema
     {
 
@@ -36965,6 +37544,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MailboxUsageQuotaStatusMailboxCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MailboxUsageQuotaStatusMailboxCountsObjectSchema : EntityObjectSchema
     {
 
@@ -37026,6 +37606,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// MailboxUsageStorageObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class MailboxUsageStorageObjectSchema : EntityObjectSchema
     {
 
@@ -37063,6 +37644,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OneDriveActivityUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OneDriveActivityUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -37142,6 +37724,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SiteActivitySummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SiteActivitySummaryObjectSchema : EntityObjectSchema
     {
 
@@ -37197,6 +37780,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OneDriveUsageAccountDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OneDriveUsageAccountDetailObjectSchema : EntityObjectSchema
     {
 
@@ -37270,6 +37854,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OneDriveUsageAccountCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OneDriveUsageAccountCountsObjectSchema : EntityObjectSchema
     {
 
@@ -37319,6 +37904,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OneDriveUsageFileCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OneDriveUsageFileCountsObjectSchema : EntityObjectSchema
     {
 
@@ -37368,6 +37954,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SiteUsageStorageObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SiteUsageStorageObjectSchema : EntityObjectSchema
     {
 
@@ -37411,6 +37998,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SharePointActivityUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SharePointActivityUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -37496,6 +38084,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SharePointActivityUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SharePointActivityUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -37557,6 +38146,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SharePointActivityPagesObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SharePointActivityPagesObjectSchema : EntityObjectSchema
     {
 
@@ -37594,6 +38184,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SharePointSiteUsageDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SharePointSiteUsageDetailObjectSchema : EntityObjectSchema
     {
 
@@ -37691,6 +38282,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SharePointSiteUsageFileCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SharePointSiteUsageFileCountsObjectSchema : EntityObjectSchema
     {
 
@@ -37740,6 +38332,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SharePointSiteUsageSiteCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SharePointSiteUsageSiteCountsObjectSchema : EntityObjectSchema
     {
 
@@ -37789,6 +38382,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SharePointSiteUsagePagesObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SharePointSiteUsagePagesObjectSchema : EntityObjectSchema
     {
 
@@ -37832,6 +38426,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessActivityUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessActivityUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -38055,6 +38650,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessActivityCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessActivityCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38104,6 +38700,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessActivityUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessActivityUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38153,6 +38750,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessPeerToPeerActivityCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessPeerToPeerActivityCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38214,6 +38812,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessPeerToPeerActivityUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessPeerToPeerActivityUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38275,6 +38874,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessPeerToPeerActivityMinuteCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessPeerToPeerActivityMinuteCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38318,6 +38918,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessOrganizerActivityCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessOrganizerActivityCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38385,6 +38986,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessOrganizerActivityUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessOrganizerActivityUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38452,6 +39054,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessOrganizerActivityMinuteCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessOrganizerActivityMinuteCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38501,6 +39104,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessParticipantActivityCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessParticipantActivityCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38562,6 +39166,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessParticipantActivityUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessParticipantActivityUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38623,6 +39228,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessParticipantActivityMinuteCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessParticipantActivityMinuteCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38660,6 +39266,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessDeviceUsageUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessDeviceUsageUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -38727,6 +39334,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessDeviceUsageDistributionUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessDeviceUsageDistributionUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38782,6 +39390,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SkypeForBusinessDeviceUsageUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SkypeForBusinessDeviceUsageUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -38843,6 +39452,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// YammerActivityUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class YammerActivityUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -38922,6 +39532,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// YammerActivitySummaryObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class YammerActivitySummaryObjectSchema : EntityObjectSchema
     {
 
@@ -38971,6 +39582,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// YammerDeviceUsageUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class YammerDeviceUsageUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -39062,6 +39674,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// YammerDeviceUsageDistributionUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class YammerDeviceUsageDistributionUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -39123,6 +39736,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// YammerDeviceUsageUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class YammerDeviceUsageUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -39190,6 +39804,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// YammerGroupsActivityDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class YammerGroupsActivityDetailObjectSchema : EntityObjectSchema
     {
 
@@ -39275,6 +39890,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// YammerGroupsActivityGroupCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class YammerGroupsActivityGroupCountsObjectSchema : EntityObjectSchema
     {
 
@@ -39318,6 +39934,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// YammerGroupsActivityCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class YammerGroupsActivityCountsObjectSchema : EntityObjectSchema
     {
 
@@ -39367,6 +39984,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsUserActivityUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsUserActivityUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -39452,6 +40070,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsUserActivityCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsUserActivityCountsObjectSchema : EntityObjectSchema
     {
 
@@ -39507,6 +40126,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsUserActivityUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsUserActivityUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -39568,6 +40188,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsDeviceUsageUserDetailObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsDeviceUsageUserDetailObjectSchema : EntityObjectSchema
     {
 
@@ -39653,6 +40274,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsDeviceUsageUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsDeviceUsageUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -39720,6 +40342,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsDeviceUsageDistributionUserCountsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsDeviceUsageDistributionUserCountsObjectSchema : EntityObjectSchema
     {
 
@@ -39781,6 +40404,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PayloadResponseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PayloadResponseObjectSchema : EntityObjectSchema
     {
 
@@ -39794,6 +40418,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AppCatalogsObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AppCatalogsObjectSchema : EntityObjectSchema
     {
 
@@ -39813,6 +40438,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsAppObjectSchema : EntityObjectSchema
     {
 
@@ -39856,6 +40482,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsTemplateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsTemplateObjectSchema : EntityObjectSchema
     {
 
@@ -39869,6 +40496,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsCatalogAppObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsCatalogAppObjectSchema : EntityObjectSchema
     {
 
@@ -39906,6 +40534,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsAppInstallationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsAppInstallationObjectSchema : EntityObjectSchema
     {
 
@@ -39931,6 +40560,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsAsyncOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsAsyncOperationObjectSchema : EntityObjectSchema
     {
 
@@ -39992,6 +40622,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsAppDefinitionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsAppDefinitionObjectSchema : EntityObjectSchema
     {
 
@@ -40023,6 +40654,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ChatMessageObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ChatMessageObjectSchema : EntityObjectSchema
     {
 
@@ -40138,6 +40770,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ChatThreadObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ChatThreadObjectSchema : EntityObjectSchema
     {
 
@@ -40157,6 +40790,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TeamsTabObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TeamsTabObjectSchema : EntityObjectSchema
     {
 
@@ -40218,6 +40852,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IdentityProviderObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IdentityProviderObjectSchema : EntityObjectSchema
     {
 
@@ -40255,6 +40890,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SynchronizationJobObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SynchronizationJobObjectSchema : EntityObjectSchema
     {
 
@@ -40292,6 +40928,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SynchronizationTemplateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SynchronizationTemplateObjectSchema : EntityObjectSchema
     {
 
@@ -40347,6 +40984,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SynchronizationSchemaObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SynchronizationSchemaObjectSchema : EntityObjectSchema
     {
 
@@ -40378,6 +41016,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AttributeMappingFunctionSchemaObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AttributeMappingFunctionSchemaObjectSchema : EntityObjectSchema
     {
 
@@ -40397,6 +41036,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// FilterOperatorSchemaObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class FilterOperatorSchemaObjectSchema : EntityObjectSchema
     {
 
@@ -40428,6 +41068,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationRootObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationRootObjectSchema : EntityObjectSchema
     {
 
@@ -40471,6 +41112,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationSynchronizationProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationSynchronizationProfileObjectSchema : EntityObjectSchema
     {
 
@@ -40550,6 +41192,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationClassObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationClassObjectSchema : EntityObjectSchema
     {
 
@@ -40647,6 +41290,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationOrganizationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationOrganizationObjectSchema : EntityObjectSchema
     {
 
@@ -40673,6 +41317,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationSchoolObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationSchoolObjectSchema : EducationOrganizationObjectSchema
     {
 
@@ -40770,6 +41415,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationUserObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationUserObjectSchema : EntityObjectSchema
     {
 
@@ -40981,6 +41627,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationSynchronizationErrorObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationSynchronizationErrorObjectSchema : EntityObjectSchema
     {
 
@@ -41030,6 +41677,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationSynchronizationProfileStatusObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationSynchronizationProfileStatusObjectSchema : EntityObjectSchema
     {
 
@@ -41055,6 +41703,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -41170,6 +41819,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationAssignmentResourceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationAssignmentResourceObjectSchema : EntityObjectSchema
     {
 
@@ -41195,6 +41845,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationSubmissionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationSubmissionObjectSchema : EntityObjectSchema
     {
 
@@ -41298,6 +41949,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EducationSubmissionResourceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EducationSubmissionResourceObjectSchema : EntityObjectSchema
     {
 
@@ -41323,6 +41975,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AppleVppTokenTroubleshootingEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AppleVppTokenTroubleshootingEventObjectSchema : DeviceManagementTroubleshootingEventObjectSchema
     {
 
@@ -41342,6 +41995,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// EnrollmentTroubleshootingEventObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class EnrollmentTroubleshootingEventObjectSchema : DeviceManagementTroubleshootingEventObjectSchema
     {
 
@@ -41403,6 +42057,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DataClassificationServiceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DataClassificationServiceObjectSchema : EntityObjectSchema
     {
 
@@ -41440,6 +42095,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SensitiveTypeObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SensitiveTypeObjectSchema : EntityObjectSchema
     {
 
@@ -41489,6 +42145,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// JobResponseBaseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class JobResponseBaseObjectSchema : EntityObjectSchema
     {
 
@@ -41544,6 +42201,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TextClassificationRequestObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TextClassificationRequestObjectSchema : EntityObjectSchema
     {
 
@@ -41569,6 +42227,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// FileClassificationRequestObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class FileClassificationRequestObjectSchema : EntityObjectSchema
     {
 
@@ -41594,6 +42253,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ClassificationJobResponseObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ClassificationJobResponseObjectSchema : JobResponseBaseObjectSchema
     {
 
@@ -41613,6 +42273,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DataPolicyOperationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DataPolicyOperationObjectSchema : EntityObjectSchema
     {
 
@@ -41662,6 +42323,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ChatObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ChatObjectSchema : EntityObjectSchema
     {
 
@@ -41699,6 +42361,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AgreementObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AgreementObjectSchema : EntityObjectSchema
     {
 
@@ -41730,6 +42393,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AgreementFileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AgreementFileObjectSchema : EntityObjectSchema
     {
 
@@ -41767,6 +42431,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SecurityObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SecurityObjectSchema : EntityObjectSchema
     {
 
@@ -41846,6 +42511,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AlertObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AlertObjectSchema : EntityObjectSchema
     {
 
@@ -42045,6 +42711,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// CloudAppSecurityProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class CloudAppSecurityProfileObjectSchema : EntityObjectSchema
     {
 
@@ -42160,6 +42827,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// DomainSecurityProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class DomainSecurityProfileObjectSchema : EntityObjectSchema
     {
 
@@ -42257,6 +42925,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// FileSecurityProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class FileSecurityProfileObjectSchema : EntityObjectSchema
     {
 
@@ -42366,6 +43035,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// HostSecurityProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class HostSecurityProfileObjectSchema : EntityObjectSchema
     {
 
@@ -42487,6 +43157,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// IpSecurityProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class IpSecurityProfileObjectSchema : EntityObjectSchema
     {
 
@@ -42578,6 +43249,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ProviderTenantSettingObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ProviderTenantSettingObjectSchema : EntityObjectSchema
     {
 
@@ -42621,6 +43293,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SecureScoreControlProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SecureScoreControlProfileObjectSchema : EntityObjectSchema
     {
 
@@ -42748,6 +43421,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// SecureScoreObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class SecureScoreObjectSchema : EntityObjectSchema
     {
 
@@ -42821,6 +43495,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// TiIndicatorObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class TiIndicatorObjectSchema : EntityObjectSchema
     {
 
@@ -43182,6 +43857,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// UserSecurityProfileObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class UserSecurityProfileObjectSchema : EntityObjectSchema
     {
 
@@ -43303,6 +43979,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// BookingNamedEntityObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BookingNamedEntityObjectSchema : EntityObjectSchema
     {
 
@@ -43317,6 +43994,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// BookingAppointmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BookingAppointmentObjectSchema : EntityObjectSchema
     {
 
@@ -43486,6 +44164,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// BookingBusinessObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BookingBusinessObjectSchema : BookingNamedEntityObjectSchema
     {
 
@@ -43589,6 +44268,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// BookingPersonObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BookingPersonObjectSchema : BookingNamedEntityObjectSchema
     {
 
@@ -43608,6 +44288,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// BookingCustomerObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BookingCustomerObjectSchema : BookingPersonObjectSchema
     {
 
@@ -43621,6 +44302,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// BookingServiceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BookingServiceObjectSchema : BookingNamedEntityObjectSchema
     {
 
@@ -43706,6 +44388,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// BookingStaffMemberObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BookingStaffMemberObjectSchema : BookingPersonObjectSchema
     {
 
@@ -43749,6 +44432,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// BookingCurrencyObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BookingCurrencyObjectSchema : EntityObjectSchema
     {
 
@@ -43768,6 +44452,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// PrivilegedAccessObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class PrivilegedAccessObjectSchema : EntityObjectSchema
     {
 
@@ -43817,6 +44502,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GovernanceResourceObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GovernanceResourceObjectSchema : EntityObjectSchema
     {
 
@@ -43896,6 +44582,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GovernanceRoleDefinitionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GovernanceRoleDefinitionObjectSchema : EntityObjectSchema
     {
 
@@ -43945,6 +44632,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GovernanceRoleAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GovernanceRoleAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -44042,6 +44730,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GovernanceRoleAssignmentRequestObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GovernanceRoleAssignmentRequestObjectSchema : EntityObjectSchema
     {
 
@@ -44133,6 +44822,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GovernanceRoleSettingObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GovernanceRoleSettingObjectSchema : EntityObjectSchema
     {
 
@@ -44212,6 +44902,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GovernanceSubjectObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GovernanceSubjectObjectSchema : EntityObjectSchema
     {
 
@@ -44249,6 +44940,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AccessReviewObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AccessReviewObjectSchema : EntityObjectSchema
     {
 
@@ -44346,6 +45038,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AccessReviewReviewerObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AccessReviewReviewerObjectSchema : EntityObjectSchema
     {
 
@@ -44371,6 +45064,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// AccessReviewDecisionObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class AccessReviewDecisionObjectSchema : EntityObjectSchema
     {
 
@@ -44438,6 +45132,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// BusinessFlowTemplateObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class BusinessFlowTemplateObjectSchema : EntityObjectSchema
     {
 
@@ -44457,6 +45152,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ProgramObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ProgramObjectSchema : EntityObjectSchema
     {
 
@@ -44488,6 +45184,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ProgramControlObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ProgramControlObjectSchema : EntityObjectSchema
     {
 
@@ -44555,6 +45252,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// ProgramControlTypeObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class ProgramControlTypeObjectSchema : EntityObjectSchema
     {
 
@@ -44580,6 +45278,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OfficeConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OfficeConfigurationObjectSchema : EntityObjectSchema
     {
 
@@ -44611,6 +45310,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OfficeClientConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OfficeClientConfigurationObjectSchema : EntityObjectSchema
     {
 
@@ -44667,6 +45367,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// OfficeClientConfigurationAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class OfficeClientConfigurationAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -44686,6 +45387,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsOfficeClientConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsOfficeClientConfigurationObjectSchema : OfficeClientConfigurationObjectSchema
     {
 
@@ -44699,6 +45401,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// WindowsOfficeClientSecurityConfigurationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class WindowsOfficeClientSecurityConfigurationObjectSchema : OfficeClientConfigurationObjectSchema
     {
 
@@ -44712,6 +45415,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyDefinitionValueObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyDefinitionValueObjectSchema : EntityObjectSchema
     {
 
@@ -44761,6 +45465,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyConfigurationAssignmentObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyConfigurationAssignmentObjectSchema : EntityObjectSchema
     {
 
@@ -44786,6 +45491,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationValueObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationValueObjectSchema : EntityObjectSchema
     {
 
@@ -44823,6 +45529,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationObjectSchema : EntityObjectSchema
     {
 
@@ -44854,6 +45561,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationCheckBoxObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationCheckBoxObjectSchema : GroupPolicyPresentationObjectSchema
     {
 
@@ -44873,6 +45581,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationComboBoxObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationComboBoxObjectSchema : GroupPolicyPresentationObjectSchema
     {
 
@@ -44910,6 +45619,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationDecimalTextBoxObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationDecimalTextBoxObjectSchema : GroupPolicyPresentationObjectSchema
     {
 
@@ -44959,6 +45669,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationDropdownListObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationDropdownListObjectSchema : GroupPolicyPresentationObjectSchema
     {
 
@@ -44990,6 +45701,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationListBoxObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationListBoxObjectSchema : GroupPolicyPresentationObjectSchema
     {
 
@@ -45009,6 +45721,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationLongDecimalTextBoxObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationLongDecimalTextBoxObjectSchema : GroupPolicyPresentationObjectSchema
     {
 
@@ -45058,6 +45771,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationMultiTextBoxObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationMultiTextBoxObjectSchema : GroupPolicyPresentationObjectSchema
     {
 
@@ -45089,6 +45803,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationTextObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationTextObjectSchema : GroupPolicyPresentationObjectSchema
     {
 
@@ -45102,6 +45817,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationTextBoxObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationTextBoxObjectSchema : GroupPolicyPresentationObjectSchema
     {
 
@@ -45133,6 +45849,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationValueBooleanObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationValueBooleanObjectSchema : GroupPolicyPresentationValueObjectSchema
     {
 
@@ -45152,6 +45869,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationValueDecimalObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationValueDecimalObjectSchema : GroupPolicyPresentationValueObjectSchema
     {
 
@@ -45171,6 +45889,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationValueListObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationValueListObjectSchema : GroupPolicyPresentationValueObjectSchema
     {
 
@@ -45190,6 +45909,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationValueLongDecimalObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationValueLongDecimalObjectSchema : GroupPolicyPresentationValueObjectSchema
     {
 
@@ -45209,6 +45929,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationValueMultiTextObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationValueMultiTextObjectSchema : GroupPolicyPresentationValueObjectSchema
     {
 
@@ -45228,6 +45949,7 @@ namespace Microsoft.Graph
     /// <summary>
     /// GroupPolicyPresentationValueTextObjectSchema
     /// </summary>
+    [ExcludeFromCodeCoverage]
     public class GroupPolicyPresentationValueTextObjectSchema : GroupPolicyPresentationValueObjectSchema
     {
 

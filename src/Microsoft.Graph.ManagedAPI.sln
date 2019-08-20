@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29021.104
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Graph.ManagedAPI", ".\Microsoft.Graph.ManagedAPI\Microsoft.Graph.ManagedAPI.csproj", "{F85EE2F6-0307-418B-BB1D-C12EE2F62690}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Graph.ManagedAPI", "Microsoft.Graph.ManagedAPI\Microsoft.Graph.ManagedAPI.csproj", "{F85EE2F6-0307-418B-BB1D-C12EE2F62690}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Graph.ManagedAPI.Tests", ".\Microsoft.Graph.ManagedAPI.Tests\Microsoft.Graph.ManagedAPI.Tests.csproj", "{654AB0C3-B8B8-4010-8BB7-246A1534E376}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Microsoft.Graph.ManagedAPI.UnitTests", "Microsoft.Graph.ManagedAPI.Tests\Microsoft.Graph.ManagedAPI.UnitTests.csproj", "{654AB0C3-B8B8-4010-8BB7-246A1534E376}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Microsoft.Graph.ManagedAPI.FunctionalTests", "Microsoft.Graph.ManagedAPI.FunctionalTests\Microsoft.Graph.ManagedAPI.FunctionalTests.csproj", "{A28ED1B6-1F4D-4A9D-BD17-892F88F58DE6}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{654AB0C3-B8B8-4010-8BB7-246A1534E376}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{654AB0C3-B8B8-4010-8BB7-246A1534E376}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{654AB0C3-B8B8-4010-8BB7-246A1534E376}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A28ED1B6-1F4D-4A9D-BD17-892F88F58DE6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A28ED1B6-1F4D-4A9D-BD17-892F88F58DE6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A28ED1B6-1F4D-4A9D-BD17-892F88F58DE6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A28ED1B6-1F4D-4A9D-BD17-892F88F58DE6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

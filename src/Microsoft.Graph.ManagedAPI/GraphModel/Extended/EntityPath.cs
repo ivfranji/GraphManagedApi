@@ -39,7 +39,7 @@
         /// </summary>
         /// <param name="id">Entity id.</param>
         /// <param name="entityType">Type of entity.</param>
-        internal EntityPath(string id, Type entityType)
+        public EntityPath(string id, Type entityType)
             : this(entityType)
         {
             if (string.IsNullOrEmpty(id))
