@@ -1,6 +1,8 @@
 ﻿namespace Microsoft.Graph.Exchange
 {
     using System;
+    using System.Net;
+    using Microsoft.Graph.CoreHttp;
     using Microsoft.Graph.CoreAuth;
     using Microsoft.Graph.CoreJson;
     using Microsoft.Graph.Identities;
@@ -45,6 +47,17 @@
         /// Use beta endpoint.
         /// </summary>
         public bool Beta { get; }
+
+        /// <summary>
+        /// Web proxy to be used.
+        /// </summary>
+        public IWebProxy WebProxy
+        {
+            set
+            {
+                HttpClientFactory.SetProxyServer(value);
+            }
+        }
 
         /// <summary>
         /// Create <see cref="ExchangeService"/> for specified user.
