@@ -1,6 +1,7 @@
 ﻿namespace Microsoft.Graph.CoreHttp
 {
     using System;
+    using System.Collections.Generic;
     using System.Diagnostics;
     using System.Net.Http;
     using System.Net.Http.Headers;
@@ -11,27 +12,39 @@
     /// <summary>
     /// User agent http handler. Configure user agent on outgoing requests.
     /// </summary>
-    internal class HttpUserAgentHandler : DelegatingHandler
+    internal class HttpRequestHeaderHandler : DelegatingHandler
     {
         /// <summary>
-        /// Create new instance of <see cref="UserAgentHttpHandler"/>.
+        /// The client request identifier header
         /// </summary>
-        public HttpUserAgentHandler()
+        private const string ClientRequestIdHeader = "client-request-id";
+
+        /// <summary>
+        /// The SDK version request header
+        /// </summary>
+        private const string SdkVersionRequestHeader = "SdkVersion";
+
+        /// <summary>
+        /// Create new instance of <see cref="HttpRequestHeaderHandler"/>.
+        /// </summary>
+        public HttpRequestHeaderHandler()
         {
-            this.DefaultUserAgent = "Graph-ManagedAPI";
         }
 
         /// <summary>
         /// Default user agent.
         /// </summary>
-        public string DefaultUserAgent { get; }
+        public string DefaultUserAgent
+        {
+            get { return "Graph-ManagedAPI"; }
+        }
 
         /// <summary>
         /// Version.
         /// </summary>
         public Lazy<string> Version
         {
-            get { return HttpUserAgentHandler.buildNumber; }
+            get { return HttpRequestHeaderHandler.buildNumber; }
         }
 
         /// <summary>
@@ -42,6 +55,15 @@
         /// <returns></returns>
         protected override Task<HttpResponseMessage> SendAsync(HttpRequestMessage request, CancellationToken cancellationToken)
         {
+            // this will be propagated back to the client.
+            request.Headers.Add(
+                HttpRequestHeaderHandler.ClientRequestIdHeader,
+                Guid.NewGuid().ToString());
+
+            request.Headers.Add(
+                SdkVersionRequestHeader,
+                $"{this.DefaultUserAgent}/{this.Version.Value}");
+
             // if no agent added, append default, otherwise append default name to 
             // all agents in request.
             if (request.Headers.UserAgent.Count == 0)

@@ -75,7 +75,7 @@
             // UserAgent -> Throttling -> Authorization -> LogWriter -> Extension
             DelegatingHandler[] delegatingHandlers = new DelegatingHandler[]
             {
-                new HttpUserAgentHandler(), 
+                new HttpRequestHeaderHandler(), 
                 new HttpThrottlingHandler(), 
                 new HttpAuthZHandler(), 
                 new HttpLogWriterHandler(),

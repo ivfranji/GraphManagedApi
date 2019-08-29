@@ -300,5 +300,44 @@
                 }
             }
         }
+
+        /// <summary>
+        /// Tests the HTTP request header handler.
+        /// </summary>
+        [TestMethod]
+        public async Task Test_HttpRequestHeaderHandler()
+        {
+            IHttpExtensionHandler extensionHandler = Substitute.For<IHttpExtensionHandler>();
+            extensionHandler.SendAsync(
+                null,
+                default(CancellationToken),
+                null).ReturnsForAnyArgs(
+                (callInfo) =>
+                {
+                    HttpRequestMessage requestMessage = callInfo[0] as HttpRequestMessage;
+                    IEnumerable<string> headers;
+                    Assert.IsTrue(requestMessage.Headers.TryGetValues("SdkVersion", out headers));
+                    foreach (string header in headers)
+                    {
+                        Assert.IsTrue(header.StartsWith("Graph-ManagedAPI/"));
+                    }
+
+                    Assert.IsTrue(requestMessage.Headers.TryGetValues("client-request-id", out headers));
+                    foreach (string header in headers)
+                    {
+                        Guid clientRequestId;
+                        Assert.IsTrue(Guid.TryParse(header, out clientRequestId));
+                    }
+
+                    return Task.FromResult(new HttpResponseMessage(HttpStatusCode.OK));
+                });
+            HttpRequestContext context = new HttpRequestContext();
+            context.HttpExtensionHandler = extensionHandler;
+            context.AuthorizationProvider = Substitute.For<IAuthorizationProvider>();
+            using (HttpRequest request = HttpRequest.Get(new Uri("http://localhost"), context))
+            {
+                await request.GetHttpResponseAsync();
+            }
+        }
     }
 }

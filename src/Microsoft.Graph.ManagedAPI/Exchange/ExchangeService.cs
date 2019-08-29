@@ -103,6 +103,14 @@
         #endregion
 
         /// <summary>
+        /// Gets the HTTP response headers.
+        /// </summary>
+        /// <value>
+        /// The HTTP response headers.
+        /// </value>
+        public IDictionary<string, IEnumerable<string>> HttpResponseHeaders { get; private set; }
+
+        /// <summary>
         /// Graph identity.
         /// </summary>
         public IGraphIdentity Identity { get; }
@@ -864,6 +872,14 @@
             {
                 this.CustomizeHttpRequest(httpRequest);
                 HttpResponse httpResponse = await httpRequest.GetHttpResponseAsync();
+                this.HttpResponseHeaders = new Dictionary<string, IEnumerable<string>>();
+                foreach (KeyValuePair<string, IEnumerable<string>> header in httpResponse.ResponseHeaders)
+                {
+                    this.HttpResponseHeaders.Add(
+                        header.Key, 
+                        header.Value);
+                }
+
                 if (!httpResponse.Success)
                 {
                     RootExceptionObject rootExceptionObject = this.JsonConverter.Convert<RootExceptionObject>(httpResponse.Error);
