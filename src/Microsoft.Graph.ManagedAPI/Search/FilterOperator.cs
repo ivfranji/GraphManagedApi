@@ -43,6 +43,11 @@
         /// <summary>
         /// Less or equal.
         /// </summary>
-        le
+        le,
+
+        /// <summary>
+        /// The startswith
+        /// </summary>
+        startswith
     }
 }

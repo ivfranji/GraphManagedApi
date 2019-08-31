@@ -62,6 +62,12 @@
         /// <returns></returns>
         protected string FormatString(string obj, FilterOperator filterOperator, string propertyPath)
         {
+            // special case for startswith - it must be in format startswith(property, 'value')
+            if (filterOperator == FilterOperator.startswith)
+            {
+                return $"startswith({propertyPath},'{obj}')";
+            }
+
             return this.QuoteRequired
                 ? $"{propertyPath} {filterOperator} '{obj}'"
                 : $"{propertyPath} {filterOperator} {obj}";
@@ -109,13 +115,21 @@
     /// </summary>
     internal sealed class BoolFilterFormatter : SearchFilterFormatterBase
     {
-        /// <inheritdoc cref="BaseFilterFormatter.Type"/>
+        /// <summary>
+        /// </summary>
+        /// <inheritdoc cref="System.Type" />
         public override string Type
         {
             get { return typeof(bool).FullName; }
         }
 
-        /// <inheritdoc cref="BaseFilterFormatter.FormatInternal"/>
+        /// <summary>
+        /// Format internal.
+        /// </summary>
+        /// <param name="obj">Object to format.</param>
+        /// <param name="filterOperator">Filter operator.</param>
+        /// <param name="propertyDefinition">Property definition.</param>
+        /// <returns></returns>
         protected override string FormatInternal(object obj, FilterOperator filterOperator, PropertyDefinition propertyDefinition)
         {
             return this.Format(

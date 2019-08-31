@@ -13,6 +13,11 @@
     public abstract class SearchFilter : IUrlQuery
     {
         /// <summary>
+        /// The filter builder
+        /// </summary>
+        private StringBuilder filterBuilder;
+
+        /// <summary>
         /// Search format provider.
         /// </summary>
         private static SearchFormatProvider searchFormatProvider = new SearchFormatProvider();
@@ -29,6 +34,7 @@
         protected SearchFilter(FilterOperator filterOperator)
         {
             this.FilterOperator = filterOperator;
+            this.filterBuilder = new StringBuilder();
         }
 
         /// <summary>
@@ -55,15 +61,19 @@
                 propertyDefinition);
         }
 
-        /// <inheritdoc cref="IQuery.Query"/>
+        /// <summary>
+        /// Gets the query.
+        /// </summary>
+        /// <value>
+        /// The query.
+        /// </value>
         public string Query
         {
             get
             {
-                StringBuilder stringBuilder = new StringBuilder();
-                this.ToString(stringBuilder);
-
-                string filter = stringBuilder.ToString();
+                this.filterBuilder.Clear();
+                this.ToString(this.filterBuilder);
+                string filter = this.filterBuilder.ToString();
                 if (filter.StartsWith(SearchFilter.FilterPrefix))
                 {
                     return filter;
@@ -124,12 +134,19 @@
             /// Property name.
             /// </summary>
             public PropertyDefinition PropertyDefinition { get; }
-
+            
             /// <summary>
-            /// Property value.
+            /// Gets the property value.
+            /// </summary>
+            /// <value>
+            /// The property value.
+            /// </value>
             public object PropertyValue { get; }
-
-            /// <inheritdoc cref="SearchFilter.ToString(StringBuilder)"/>
+            
+            /// <summary>
+            /// Converts to string.
+            /// </summary>
+            /// <param name="sb"></param>
             protected internal sealed override void ToString(StringBuilder sb)
             {
                 sb.Append(this.FormatFilter(
@@ -318,6 +335,23 @@
             /// </summary>
             public OrFilterCollection()
                 : base(FilterOperator.or)
+            {
+            }
+        }
+
+        /// <summary>
+        /// Starts with filter.
+        /// </summary>
+        /// <seealso cref="Microsoft.Graph.Search.SearchFilter.SimplePropertyMatchingFilter" />
+        public sealed class StartsWith : SimplePropertyMatchingFilter
+        {
+            /// <summary>
+            /// Initializes a new instance of the <see cref="StartsWith"/> class.
+            /// </summary>
+            /// <param name="propertyDefinition">The property definition.</param>
+            /// <param name="propertyValue">The property value.</param>
+            public StartsWith(PropertyDefinition propertyDefinition, object propertyValue)
+                : base(propertyDefinition, propertyValue, FilterOperator.startswith)
             {
             }
         }
