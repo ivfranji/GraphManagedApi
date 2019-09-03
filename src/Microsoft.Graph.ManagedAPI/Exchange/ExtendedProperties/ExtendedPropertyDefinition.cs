@@ -59,6 +59,31 @@
         }
 
         /// <summary>
+        /// Performs an implicit conversion from <see cref="ExtendedPropertyDefinition"/> to <see cref="SingleValueLegacyExtendedProperty"/>.
+        /// </summary>
+        /// <param name="extendedPropertyDefinition">The extended property definition.</param>
+        /// <returns>
+        /// The result of the conversion.
+        /// </returns>
+        public static implicit operator SingleValueLegacyExtendedProperty(ExtendedPropertyDefinition extendedPropertyDefinition)
+        {
+            if (null == extendedPropertyDefinition)
+            {
+                return null;
+            }
+
+            if (extendedPropertyDefinition.MapiPropertyValueType == MapiPropertyValueType.MultiValueExtendedProperties)
+            {
+                throw new InvalidOperationException("Please specify SingleValueExtendedProperty for conversion.");
+            }
+
+            return new SingleValueLegacyExtendedProperty()
+            {
+                Id = extendedPropertyDefinition.Definition
+            };
+        }
+
+        /// <summary>
         /// Default constructor. 
         /// </summary>
         /// <param name="type">Type of property.</param>

@@ -381,5 +381,73 @@
                 await item.DeleteAsync();
             }
         }
+
+        /// <summary>
+        /// Sends the message with extended property.
+        /// </summary>
+        /// <param name="exchangeServiceA">The exchange service a.</param>
+        /// <param name="exchangeServiceB">The exchange service b.</param>
+        public static async Task SendMessageWithExtendedProperty(ExchangeService exchangeServiceA, ExchangeService exchangeServiceB)
+        {
+            string messageSubject = Guid.NewGuid().ToString();
+            Message message = new Message(exchangeServiceA)
+            {
+                Subject = messageSubject,
+                Body = new ItemBody()
+                {
+                    Content = "Test message",
+                    ContentType = BodyType.Html
+                }
+            };
+
+            message.ToRecipients = new List<Recipient>
+            {
+                new Recipient()
+                {
+                    EmailAddress = new EmailAddress()
+                    {
+                        Address = AppConfig.MailboxB
+                    }
+                }
+            };
+            
+            ExtendedPropertyDefinition extendedPropertyDefinition = new ExtendedPropertyDefinition(
+                MapiPropertyType.String,
+                "MyIdProp",
+                Guid.NewGuid());
+
+            string testValue = Guid.NewGuid().ToString();
+            SingleValueLegacyExtendedProperty singleValueLegacyExtendedProperty = (SingleValueLegacyExtendedProperty) extendedPropertyDefinition;
+            singleValueLegacyExtendedProperty.Value = testValue;
+            message.SingleValueExtendedProperties.Add(singleValueLegacyExtendedProperty);
+
+            MailFolder draftFolder = await exchangeServiceA.GetAsync<MailFolder>(
+                new EntityPath(WellKnownFolderName.Drafts.ToString(),
+                    typeof(MailFolder)));
+
+            await message.SaveAsync(draftFolder);
+            await message.Send();
+
+            Thread.Sleep(6000); // allow some time for email to be delivered
+            MessageView messageView = new MessageView(10);
+            messageView.PropertySet.Expand(extendedPropertyDefinition);
+
+            SearchFilter subjectFilter = new SearchFilter.IsEqualTo(
+                MessageObjectSchema.Subject,
+                messageSubject);
+
+            FindItemResults<Message> mailboxBMessages = await exchangeServiceB.FindItems(
+                "Inbox",
+                messageView,
+                subjectFilter);
+
+            Assert.AreEqual(
+                1,
+                mailboxBMessages.TotalCount);
+
+            Assert.AreEqual(
+                testValue,
+                mailboxBMessages.Items[0].SingleValueExtendedProperties[0].Value);
+        }
     }
 }

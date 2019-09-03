@@ -131,6 +131,15 @@
             await this.RunAsMailboxA(MessageTestDefinition.CreateReadUpdateDeleteExtendedProperties);
         }
 
+        /// <summary>
+        /// Tests the send message with extended property.
+        /// </summary>
+        [TestMethod]
+        public async Task Test_SendMessageWithExtendedProperty()
+        {
+            await this.RunWithMailboxAMailboxB(MessageTestDefinition.SendMessageWithExtendedProperty);
+        }
+
         #endregion
 
         #region MailFolder tests
