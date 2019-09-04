@@ -238,6 +238,15 @@
             await this.RunWithMailboxAMailboxB(EventTestDefinition.CreateReadUpdateDeleteEvent);
         }
 
+        /// <summary>
+        /// Tests the create do not forward event.
+        /// </summary>
+        [TestMethod]
+        public async Task Test_CreateDoNotForwardEvent()
+        {
+            await this.RunWithMailboxAMailboxB(EventTestDefinition.CreateDoNotForwardEvent);
+        }
+
         #endregion
 
         #region OutlookTasks tests
