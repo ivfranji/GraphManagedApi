@@ -218,10 +218,22 @@
 
         #region Contacts tests
 
+        /// <summary>
+        /// Test create read update delete contact.
+        /// </summary>
         [TestMethod]
         public async Task Test_CreateReadUpdateDeleteContact()
         {
             await this.RunAsMailboxA(ContactTestDefinition.CreateReadUpdateDeleteContact);
+        }
+
+        /// <summary>
+        /// Test create contact with categories.
+        /// </summary>
+        [TestMethod]
+        public async Task Test_CreateContactWithCategories()
+        {
+            await this.RunAsMailboxA(ContactTestDefinition.CreateContactWithCategories);
         }
 
         #endregion
